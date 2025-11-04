@@ -539,13 +539,13 @@ export default function Home() {
             <div className="h-1 w-20 bg-yellow-700 mx-auto rounded-full"></div>
           </motion.div>
 
-          <motion.div variants={containerVariants} className="grid md:grid-cols-3 gap-4 md:gap-8">
+          <motion.div variants={containerVariants} className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
             {seminars.map((title, idx) => (
               <motion.div
                 key={idx}
                 variants={itemVariants}
                 whileHover={{ y: -5 }}
-                className="bg-white border-2 border-slate-200 rounded-xl p-4 md:p-6 hover:border-slate-700 transition-all hover:shadow-xl"
+                className="bg-white border-2 border-slate-200 rounded-xl p-4 md:p-6 hover:border-slate-700 transition-all hover:shadow-xl flex flex-col items-center justify-between"
               >
 
                 <p className="text-slate-800 font-semibold text-center mb-4 min-h-16 md:min-h-20 flex items-center justify-center text-sm">
@@ -585,9 +585,6 @@ export default function Home() {
                 whileHover={{ y: -5 }}
                 className="bg-gradient-to-br from-slate-50 to-white border-2 border-slate-200 rounded-xl p-6 hover:border-slate-700 transition-all hover:shadow-xl flex flex-col items-center justify-between"
               >
-                <div className="flex items-center justify-center mb-4">
-                  <FileText className="w-8 h-8 text-slate-700" />
-                </div>
                 <p className="text-slate-800 font-semibold text-center mb-4 min-h-20 flex items-center justify-center text-sm">
                   {title}
                 </p>
