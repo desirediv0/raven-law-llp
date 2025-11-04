@@ -179,7 +179,7 @@ export default function Home() {
         style={{
           backgroundImage: `
       linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-      url('https://img.freepik.com/free-photo/symbol-justice-courtroom_23-2152001191.jpg?t=st=1762249693~exp=1762253293~hmac=f0d9e191cd64e7e734f547b25f3204ca8d9378d0084e83dfbfac028347101e9b&w=1480')
+      url('/bg.avif')
     `,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
@@ -230,7 +230,7 @@ export default function Home() {
               {/* Founder */}
               <motion.div
                 variants={itemVariants}
-                className="text-center mb-2 p-4 md:p-6 rounded-2xl border border-slate-200 bg-slate-800/50 shadow-lg"
+                className="text-center mb-2 p-4 md:p-6 rounded-2xl border border-slate-500 bg-slate-800/50 shadow-lg"
               >
                 <h3 className="text-xl md:text-3xl font-bold text-white mb-2">
                   HON&apos;BLE JUSTICE AJAY TEWARI (RETD.)
