@@ -1,5 +1,5 @@
 "use client";
-import { MapPin, Phone, Mail, X, BookOpen, FileText } from "lucide-react";
+import { MapPin, Phone, Mail, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import Image from "next/image";
@@ -614,7 +614,7 @@ export default function Home() {
             <div className="h-1 w-20 bg-white mx-auto rounded-full"></div>
           </motion.div>
 
-          <motion.div variants={containerVariants} className="grid md:grid-cols-3 gap-8">
+          <motion.div variants={containerVariants} className="grid md:grid-cols-3 gap-5">
             {offices.map((office, idx) => (
               <motion.div
                 key={idx}
