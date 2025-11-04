@@ -348,7 +348,7 @@ export default function Home() {
         className="py-10  bg-white "
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div variants={itemVariants} className="text-center mb-7 md:mb-16">
+          <motion.div variants={itemVariants} className="text-center mb-7 ">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-800">
               RAVEN LAW  <span className="text-yellow-700">LLP</span>
             </h2>
@@ -532,7 +532,7 @@ export default function Home() {
         className="py-10 bg-gradient-to-br from-slate-50 to-slate-100"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div variants={itemVariants} className="text-center mb-7 md:mb-16">
+          <motion.div variants={itemVariants} className="text-center mb-7 ">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-800">
               SEMINAR <span className="text-yellow-700">RECORDING</span>
             </h2>
@@ -570,7 +570,7 @@ export default function Home() {
         className="py-10 bg-white "
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div variants={itemVariants} className="text-center mb-7 md:mb-16">
+          <motion.div variants={itemVariants} className="text-center mb-7 ">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-800">
               <span className="text-yellow-700">ARTICLES</span>
             </h2>
