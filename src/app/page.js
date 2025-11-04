@@ -545,13 +545,13 @@ export default function Home() {
                 key={idx}
                 variants={itemVariants}
                 whileHover={{ y: -5 }}
-                className="bg-white border-2 border-slate-200 rounded-xl p-4 md:p-6 hover:border-slate-700 transition-all hover:shadow-xl flex flex-col items-center justify-between"
+                className="bg-white border-2 border-slate-200 rounded-xl p-2 md:p-6 hover:border-slate-700 transition-all hover:shadow-xl flex flex-col items-center justify-between"
               >
 
-                <p className="text-slate-800 font-semibold text-center mb-4 min-h-16 md:min-h-20 flex items-center justify-center text-sm">
+                <p className="text-slate-800 md:font-semibold text-center mb-4 min-h-16 md:min-h-20 flex items-center justify-center text-xs md:text-sm">
                   {title}
                 </p>
-                <button className="w-full bg-gradient-to-r from-yellow-700 to-yellow-900 text-white font-semibold hover:from-yellow-800 hover:to-yellow-900 transition-colors py-2 rounded-lg text-sm">
+                <button className="w-full bg-gradient-to-r from-yellow-700 to-yellow-900 text-white md:font-semibold hover:from-yellow-800 hover:to-yellow-900 transition-colors py-2 rounded-lg text-sm">
                   View Recording →
                 </button>
               </motion.div>
@@ -583,12 +583,12 @@ export default function Home() {
                 key={idx}
                 variants={itemVariants}
                 whileHover={{ y: -5 }}
-                className="bg-gradient-to-br from-slate-50 to-white border-2 border-slate-200 rounded-xl p-6 hover:border-slate-700 transition-all hover:shadow-xl flex flex-col items-center justify-between"
+                className="bg-gradient-to-br from-slate-50 to-white border-2 border-slate-200 rounded-xl p-2 md:p-6 hover:border-slate-700 transition-all hover:shadow-xl flex flex-col items-center justify-between"
               >
-                <p className="text-slate-800 font-semibold text-center mb-4 min-h-20 flex items-center justify-center text-sm">
+                <p className="text-slate-800 md:font-semibold text-center mb-4 min-h-20 flex items-center justify-center text-xs md:text-sm">
                   {title}
                 </p>
-                <button className="w-full bg-gradient-to-r from-yellow-700 to-yellow-900 text-white font-semibold hover:from-yellow-800 hover:to-yellow-900 transition-colors py-2 rounded-lg text-sm">
+                <button className="w-full bg-gradient-to-r from-yellow-700 to-yellow-900 text-white md:font-semibold hover:from-yellow-800 hover:to-yellow-900 transition-colors py-2 rounded-lg text-sm">
                   View Article →
                 </button>
               </motion.div>
