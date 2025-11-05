@@ -59,26 +59,80 @@ const Index = () => {
     },
   ];
 
+
   const seminars = [
-    "Article 21 and the Right to Bail",
-    "Debt Recovery: An overview of the Indian system",
-    "Racial discrimination in India: realising the spirit of Article 14 and the need for a comprehensive Civil Rights Act",
-    "Understanding the inherent powers of the High Courts under Section 482 of CrPC",
-    "The Citizenship Amendment Act: The North-Eastern perspective",
-    "The Insolvency and Bankruptcy Code, 2016: A brief overview",
-    "Analysis of Section 397 of the CrPC",
-    "RERA Act: an overview",
-    "Role and duties of Government Advocates",
-    "The functioning of Courts during Covid-19: a pan-Indian perspective",
-    "Article 214 r/w Article 231: discussing the constitutional principles relating to common High Courts in India",
+    {
+      title: "Article 21 and the Right to Bail",
+      link: "https://www.youtube.com/watch?v=Aiw-8A78zf4&t=2s",
+    },
+    {
+      title: "Debt Recovery: An overview of the Indian system",
+      link: "https://www.youtube.com/watch?v=e_LR-dkqEGo",
+    },
+    {
+      title: "Racial discrimination in India: realising the spirit of Article 14 and the need for a comprehensive Civil Rights Act",
+      link: "https://www.youtube.com/watch?v=8dRp6G4hK0I",
+    },
+    {
+      title: "Understanding the inherent powers of the High Courts under Section 482 of CrPC",
+      link: "https://www.youtube.com/watch?v=lIzvxqnR6lE",
+    },
+    {
+      title: "The Citizenship Amendment Act: The North-Eastern perspective",
+      link: "https://www.youtube.com/watch?v=T2LgGBinMCI",
+    },
+    {
+      title: "The Insolvency and Bankruptcy Code, 2016: A brief overview",
+      link: "https://www.youtube.com/watch?v=3eUQ5wcUpbI",
+    },
+    {
+      title: "Analysis of Section 397 of the CrPC",
+      link: "https://www.youtube.com/watch?v=tI6919Rkcl0&t=18s",
+    },
+    {
+      title: "RERA Act: an overview",
+      link: "https://www.youtube.com/watch?v=bqtiVjjVDCQ",
+    },
+    {
+      title: "Role and duties of Government Advocates",
+      link: "https://www.youtube.com/watch?v=lNnoW7CrXFk&t=7s",
+    },
+    {
+      title: "The functioning of Courts during Covid-19: a pan-Indian perspective",
+      link: "https://www.youtube.com/watch?v=usUygTs0OVE&t=25s",
+    },
+    {
+      title:
+        "Article 214 r/w Article 231: discussing the constitutional principles relating to common High Courts in India",
+      link: "https://www.youtube.com/watch?v=Hzpq0tlgkrM&t=3267s",
+    },
   ];
 
   const articles = [
-    "A Mother Let Her Child Paint on Her Nude Body, MF Hussain's 'Bharat Mata': When Does Art Become Obscene?",
-    "The Delhi exodus: What we failed to learn from 1889 and 1900",
-    '"The development of sports law in India is still at a very nascent stage and jurisprudence on this subject in India is still evolving" In conversation with Amitabh Tewari',
-    "Why 1-page, 4-section Epidemic Diseases Act of 1897 is wholly incapable of dealing with coronavirus",
-    "India's 'Triage' Guidelines Don't Explain Who Gets a Ventilator and That's a Concern During Covid-19",
+    {
+      title:
+        "A Mother Let Her Child Paint on Her Nude Body, MF Hussain's 'Bharat Mata': When Does Art Become Obscene?",
+      link: "https://www.news18.com/news/buzz/a-mother-let-her-child-paint-on-her-nude-body-mf-hussains-bharat-mata-when-does-art-become-obscene-2803611.html",
+    },
+    {
+      title: "The Delhi exodus: What we failed to learn from 1889 and 1900",
+      link: "https://indianexpress.com/article/opinion/the-delhi-exodus-what-we-failed-to-learn-from-1889-and-1900-coronavirus-india-lockdown-6340334/",
+    },
+    {
+      title:
+        '"The development of sports law in India is still at a very nascent stage and jurisprudence on this subject in India is still evolving" In conversation with Amitabh Tewari',
+      link: "https://tewari-associates.netlify.app/",
+    },
+    {
+      title:
+        "Why 1-page, 4-section Epidemic Diseases Act of 1897 is wholly incapable of dealing with coronavirus",
+      link: "https://indianexpress.com/article/opinion/web-edits/coromavirus-outbreak-epidemic-diseases-act-1897-6310555/",
+    },
+    {
+      title:
+        "India's 'Triage' Guidelines Don't Explain Who Gets a Ventilator and That's a Concern During Covid-19",
+      link: "https://www.news18.com/news/buzz/indias-triage-guidelines-dont-explain-who-gets-a-ventilator-and-thats-a-concern-when-fighting-covid-19-2568357.html",
+    },
   ];
 
   const menuItems = ["Home", "About", "Office Members", "Seminars", "Articles", "Contact"];
@@ -259,7 +313,7 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="text-lg md:text-xl mb-10 opacity-90"
+            className="text-lg md:text-xl mb-5 opacity-90"
           >
             With offices in New Delhi, Chandigarh, Guwahati and Itanagar
           </motion.p>
@@ -275,24 +329,37 @@ const Index = () => {
               {/* Founder */}
               <motion.div
                 variants={itemVariants}
-                className="text-center mb-4 p-6 rounded-2xl border-2 border-yellow-600/30 bg-slate-900/60 backdrop-blur-sm shadow-2xl"
+                initial="hidden"
+                animate="show"
+                whileHover={{ scale: 1.02 }}
+                transition={{ duration: 0.4 }}
+                className="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-10 bg-slate-900/60 border-2 border-yellow-600/30 rounded-2xl p-6 md:p-10 backdrop-blur-md shadow-2xl mb-2"
               >
-                <Image
-                  src={ajayTewariImg}
-                  alt="Hon'ble Justice Ajay Tewari"
-                  width={144}
-                  height={144}
-                  className="w-28 h-28 md:w-36 md:h-36 rounded-full mx-auto mb-4 object-cover border-4 border-yellow-600 shadow-xl"
-                />
-                <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                  HON&apos;BLE JUSTICE AJAY TEWARI (RETD.)
-                </h3>
-                <p className="text-base md:text-lg text-yellow-600 md:font-semibold mb-4">
-                  Punjab and Haryana High Court
-                </p>
-                <p className="text-white/90 max-w-3xl mx-auto text-sm md:text-base">
-                  Raven Law LLP is a fourth generation law office, with offices in New Delhi, Chandigarh, Guwahati, and Itanagar.
-                </p>
+                {/* LEFT IMAGE */}
+                <div className="flex-shrink-0">
+                  <Image
+                    src={ajayTewariImg}
+                    alt="Hon'ble Justice Ajay Tewari"
+                    width={180}
+                    height={180}
+                    className="w-32 h-32 md:w-44 md:h-44 rounded-full object-cover border-4 border-yellow-600 shadow-xl"
+                  />
+                </div>
+
+                {/* RIGHT CONTENT */}
+                <div className="text-center md:text-left flex flex-col justify-center">
+                  <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
+                    HON&apos;BLE JUSTICE AJAY TEWARI (RETD.)
+                  </h3>
+                  <p className="text-base md:text-lg text-yellow-500 font-semibold mb-4">
+                    Punjab and Haryana High Court
+                  </p>
+                  <p className="text-white/90 max-w-3xl text-sm md:text-base leading-relaxed">
+                    Raven Law LLP is a fourth-generation law office with offices in New Delhi, Chandigarh,
+                    Guwahati, and Itanagar. The firm continues its long-standing tradition of legal excellence
+                    and ethical practice, offering a wide range of litigation and advisory services.
+                  </p>
+                </div>
               </motion.div>
 
               {/* Managed By */}
@@ -491,7 +558,7 @@ const Index = () => {
           <motion.div variants={itemVariants} className="mt-16">
             <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-8 pb-3 border-b-2 border-yellow-600">CHANDIGARH OFFICE</h3>
 
-            <div className="mb-8">
+            <div className="mb-6">
               <motion.div
                 variants={itemVariants}
                 whileHover={{ y: -5 }}
@@ -513,7 +580,7 @@ const Index = () => {
             </div>
 
             {/* Chandigarh Team Members */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
                 {
                   name: "DILMRIG NAYANI",
@@ -532,12 +599,6 @@ const Index = () => {
                   role: "Associate",
                   img: shivamImg,
                   desc: "Shivam is a first-generation lawyer, who graduated in 2020 and thereafter obtained his masters in 2022, from University Institute of Legal Studies, Punjab University, Chandigarh. He is a criminal law enthusiast who regularly appears before the Punjab and Haryana High Court, Central Administrative Tribunal (CAT) and other courts and forums in Chandigarh, including the District and Sessions Court and consumer forums.",
-                },
-                {
-                  name: "SATVIK BANSAL",
-                  role: "Associate",
-                  img: satvikImg,
-                  desc: "Satvik graduated from Government Law College, Mumbai in the year 2021. He is a Criminal and Civil Law enthusiast appearing before the Punjab and Haryana High Court, Real Estate Regulatory Authority, Central Administrative Tribunal and other forums in Chandigarh. He also has experience in appearing before the Bombay High Court, Maharasthra Adminstrative Tribunal, Labour Courts and NCLT, Mumbai.",
                 },
               ].map((member, idx) => (
                 <motion.div
@@ -558,6 +619,27 @@ const Index = () => {
                   <p className="text-slate-600 text-sm leading-relaxed">{member.desc}</p>
                 </motion.div>
               ))}
+            </div>
+
+            <div className="mt-6">
+              <motion.div
+                variants={itemVariants}
+                whileHover={{ y: -5 }}
+                className="bg-gradient-to-br from-slate-50 to-white p-6 rounded-xl border-2 border-slate-200 hover:border-yellow-600 shadow-lg hover:shadow-2xl transition-all"
+              >
+                <Image
+                  src={satvikImg}
+                  alt="Satvik Bansal"
+                  className="w-32 h-32 rounded-full mb-4 mx-auto object-cover border-4 border-yellow-600/20"
+                  width={144}
+                  height={144}
+                />
+                <h4 className="text-xl font-bold text-slate-800 mb-1 text-center">SATVIK BANSAL</h4>
+                <p className="text-yellow-600 md:font-semibold text-sm mb-4 text-center">Associate</p>
+                <p className="text-slate-700 leading-relaxed text-sm">
+                  Satvik graduated from Government Law College, Mumbai in the year 2021. He is a Criminal and Civil Law enthusiast appearing before the Punjab and Haryana High Court, Real Estate Regulatory Authority, Central Administrative Tribunal and other forums in Chandigarh. He also has experience in appearing before the Bombay High Court, Maharasthra Adminstrative Tribunal, Labour Courts and NCLT, Mumbai.
+                </p>
+              </motion.div>
             </div>
           </motion.div>
         </div>
@@ -580,8 +662,13 @@ const Index = () => {
             <div className="h-1 w-20 bg-yellow-600 mx-auto rounded-full"></div>
           </motion.div>
 
-          <motion.div variants={containerVariants} className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 md:gap-4">
-            {seminars.map((title, idx) => (
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            animate="show"
+            className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 md:gap-4"
+          >
+            {seminars.map((seminar, idx) => (
               <motion.div
                 key={idx}
                 variants={itemVariants}
@@ -589,9 +676,12 @@ const Index = () => {
                 className="bg-white border-2 border-slate-200 rounded-xl p-6 hover:border-yellow-600 transition-all hover:shadow-xl flex flex-col items-center justify-between"
               >
                 <p className="text-slate-800 md:font-semibold text-center mb-4 min-h-20 flex items-center justify-center text-sm">
-                  {title}
+                  {seminar.title}
                 </p>
-                <button className="w-full bg-gradient-to-r from-yellow-600 to-yellow-600/90 text-white md:font-semibold hover:from-yellow-600/90 hover:to-yellow-600 transition-colors py-2 rounded-lg text-xs md:text-sm shadow-md hover:shadow-lg">
+                <button
+                  onClick={() => window.open(seminar.link, "_blank")}
+                  className="w-full bg-gradient-to-r from-yellow-600 to-yellow-600/90 text-white md:font-semibold hover:from-yellow-600/90 hover:to-yellow-600 transition-colors py-2 rounded-lg text-xs md:text-sm shadow-md hover:shadow-lg"
+                >
                   View Recording →
                 </button>
               </motion.div>
@@ -617,8 +707,13 @@ const Index = () => {
             <div className="h-1 w-20 bg-yellow-600 mx-auto rounded-full"></div>
           </motion.div>
 
-          <motion.div variants={containerVariants} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
-            {articles.map((title, idx) => (
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            animate="show"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-2"
+          >
+            {articles.map((article, idx) => (
               <motion.div
                 key={idx}
                 variants={itemVariants}
@@ -626,9 +721,12 @@ const Index = () => {
                 className="bg-gradient-to-br from-slate-50 to-white border-2 border-slate-200 rounded-xl p-6 hover:border-yellow-600 transition-all hover:shadow-xl flex flex-col items-center justify-between"
               >
                 <p className="text-slate-800 md:font-semibold text-center mb-4 min-h-20 flex items-center justify-center text-sm">
-                  {title}
+                  {article.title}
                 </p>
-                <button className="w-full bg-gradient-to-r from-yellow-600 to-yellow-600/90 text-white md:font-semibold hover:from-yellow-600/90 hover:to-yellow-600 transition-colors py-2 rounded-lg text-xs md:text-sm shadow-md hover:shadow-lg">
+                <button
+                  onClick={() => window.open(article.link, "_blank")}
+                  className="w-full bg-gradient-to-r from-yellow-600 to-yellow-600/90 text-white md:font-semibold hover:from-yellow-600/90 hover:to-yellow-600 transition-colors py-2 rounded-lg text-xs md:text-sm shadow-md hover:shadow-lg"
+                >
                   View Article →
                 </button>
               </motion.div>
