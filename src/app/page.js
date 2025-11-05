@@ -330,7 +330,7 @@ const Index = () => {
               <motion.div
                 variants={itemVariants}
                 initial="hidden"
-                animate="show"
+                animate="visible"
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.4 }}
                 className="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-10 bg-slate-900/60 border-2 border-yellow-600/30 rounded-2xl p-6 md:p-10 backdrop-blur-md shadow-2xl mb-2"
