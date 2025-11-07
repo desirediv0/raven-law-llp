@@ -31,6 +31,7 @@ const itemVariants = {
 const Index = () => {
   const [locationOpen, setLocationOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [callOpen, setCallOpen] = useState(false);
 
   const offices = [
     {
@@ -264,6 +265,61 @@ const Index = () => {
                     >
                       Open in Google Maps
                     </a>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Call Selection Dialog */}
+      <AnimatePresence>
+        {callOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+            onClick={() => setCallOpen(false)}
+          >
+            <motion.div
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.95, opacity: 0 }}
+              onClick={(e) => e.stopPropagation()}
+              className="bg-white rounded-2xl shadow-2xl max-w-md w-full"
+            >
+              <div className="sticky top-0 bg-yellow-600 text-white p-4 flex justify-between items-center rounded-t-2xl">
+                <h3 className="text-lg font-semibold">Call an Office</h3>
+                <button onClick={() => setCallOpen(false)} className="p-2 rounded-full bg-yellow-700/20 hover:bg-yellow-700/30">
+                  <X size={20} className="text-white" />
+                </button>
+              </div>
+
+              <div className="p-4 space-y-4">
+                {offices.slice(0, 2).map((office, idx) => (
+                  <div key={idx} className="border border-slate-200 rounded-lg p-3">
+                    <div className="flex items-center justify-between">
+                      <h4 className="text-sm font-bold text-slate-800">{office.title}</h4>
+                      <span className="text-xs text-slate-500">Tap to call</span>
+                    </div>
+                    <div className="mt-3 space-y-2">
+                      {office.phone.map((p, i) => {
+                        const cleaned = String(p || '').replace(/\s+/g, '');
+                        return (
+                          <a
+                            key={i}
+                            href={`tel:${cleaned}`}
+                            className="flex items-center gap-3 text-yellow-700 hover:underline"
+                            onClick={() => setCallOpen(false)}
+                          >
+                            <Phone size={16} />
+                            <span className="text-sm">{String(p || '').trim()}</span>
+                          </a>
+                        );
+                      })}
+                    </div>
                   </div>
                 ))}
               </div>
@@ -819,28 +875,28 @@ const Index = () => {
           <MapPin size={24} className="hover:rotate-12 transition-transform" />
         </motion.button>
 
-        <motion.a
+        <motion.button
           whileHover={{ scale: 1.08 }}
           whileTap={{ scale: 0.95 }}
-          href={offices && offices[0] && offices[0].phone && offices[0].phone[0] ? `tel:${offices[0].phone[0]}` : 'tel:+919873446301'}
+          onClick={() => setCallOpen(true)}
           title="Call primary office"
-          aria-label="Call primary office"
+          aria-label="Open call options"
           className="inline-flex bg-white text-yellow-700 w-16 h-16 rounded-full shadow-lg hover:shadow-yellow-300/40 transition-all items-center justify-center font-bold"
         >
           <Phone size={20} />
-        </motion.a>
+        </motion.button>
       </div>
 
       {/* Mobile: bottom bar with two buttons */}
       <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-slate-900/95 backdrop-blur-sm border-t border-slate-800 flex">
-        <a
-          href={offices && offices[0] && offices[0].phone && offices[0].phone[0] ? `tel:${offices[0].phone[0]}` : 'tel:+919873446301'}
+        <button
+          onClick={() => setCallOpen(true)}
           className="flex-1 flex items-center justify-center gap-2 py-3 text-white bg-yellow-600/95 hover:bg-yellow-700 transition-colors font-semibold text-sm"
-          aria-label="Call primary office"
+          aria-label="Open call options"
         >
           <Phone size={18} />
           <span>Call</span>
-        </a>
+        </button>
 
         <button
           onClick={() => setLocationOpen(true)}
