@@ -665,7 +665,7 @@ const Index = () => {
           <motion.div
             variants={containerVariants}
             initial="hidden"
-            animate="show"
+            animate="visible"
             className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 md:gap-4"
           >
             {seminars.map((seminar, idx) => (
@@ -710,7 +710,7 @@ const Index = () => {
           <motion.div
             variants={containerVariants}
             initial="hidden"
-            animate="show"
+            animate="visible"
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-2"
           >
             {articles.map((article, idx) => (
@@ -801,19 +801,56 @@ const Index = () => {
         </div>
       </motion.section>
 
-      {/* Fixed Location Button */}
-      <motion.button
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.95 }}
-        onClick={() => setLocationOpen(true)}
-        title="Find us on map"
-        className="fixed bottom-8 right-8 bg-gradient-to-r from-yellow-600 to-yellow-600/90 text-white w-16 h-16 rounded-full shadow-2xl hover:shadow-yellow-600/50 transition-all flex items-center justify-center font-bold z-30"
-        style={{
-          animation: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        }}
-      >
-        <MapPin size={24} className="hover:rotate-12 transition-transform" />
-      </motion.button>
+      {/* Fixed Action Buttons (responsive):
+          - Desktop (md+): stacked circular buttons at bottom-right
+          - Mobile (<md): full-width bottom bar with Call + Locate
+      */}
+      {/* Desktop: stacked circular buttons */}
+      <div className="hidden md:flex flex-col gap-4 fixed bottom-8 right-8 z-30 items-end">
+        <motion.button
+          whileHover={{ scale: 1.08 }}
+          whileTap={{ scale: 0.95 }}
+          onClick={() => setLocationOpen(true)}
+          title="Find us on map"
+          aria-label="Open map locations"
+          className="bg-gradient-to-r from-yellow-600 to-yellow-700 text-white w-16 h-16 rounded-full shadow-2xl hover:shadow-yellow-600/50 transition-all flex items-center justify-center font-bold"
+          style={{ animation: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite' }}
+        >
+          <MapPin size={24} className="hover:rotate-12 transition-transform" />
+        </motion.button>
+
+        <motion.a
+          whileHover={{ scale: 1.08 }}
+          whileTap={{ scale: 0.95 }}
+          href={offices && offices[0] && offices[0].phone && offices[0].phone[0] ? `tel:${offices[0].phone[0]}` : 'tel:+919873446301'}
+          title="Call primary office"
+          aria-label="Call primary office"
+          className="inline-flex bg-white text-yellow-700 w-16 h-16 rounded-full shadow-lg hover:shadow-yellow-300/40 transition-all items-center justify-center font-bold"
+        >
+          <Phone size={20} />
+        </motion.a>
+      </div>
+
+      {/* Mobile: bottom bar with two buttons */}
+      <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-slate-900/95 backdrop-blur-sm border-t border-slate-800 flex">
+        <a
+          href={offices && offices[0] && offices[0].phone && offices[0].phone[0] ? `tel:${offices[0].phone[0]}` : 'tel:+919873446301'}
+          className="flex-1 flex items-center justify-center gap-2 py-3 text-white bg-yellow-600/95 hover:bg-yellow-700 transition-colors font-semibold text-sm"
+          aria-label="Call primary office"
+        >
+          <Phone size={18} />
+          <span>Call</span>
+        </a>
+
+        <button
+          onClick={() => setLocationOpen(true)}
+          className="flex-1 flex items-center justify-center gap-2 py-3 text-yellow-100 bg-transparent hover:bg-white/5 transition-colors font-semibold text-sm"
+          aria-label="Open map locations"
+        >
+          <MapPin size={18} />
+          <span>Locate</span>
+        </button>
+      </div>
     </main>
   );
 };
