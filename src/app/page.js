@@ -369,7 +369,7 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="text-lg md:text-xl mb-5 opacity-90"
+            className="text-lg md:text-xl mb-3 opacity-90"
           >
             With offices in New Delhi, Chandigarh, Guwahati and Itanagar
           </motion.p>
@@ -423,7 +423,7 @@ const Index = () => {
                 <p className="text-center text-sm md:font-semibold text-white/80 mb-6 uppercase tracking-wider">
                   Managed By
                 </p>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                   {[
                     {
                       name: 'ABHIMANYU TEWARI',
@@ -436,12 +436,6 @@ const Index = () => {
                       role: 'Advocate, BLS LL.B, BCL (Oxford University)',
                       office: 'Managed out of Chandigarh',
                       img: amitabhImg,
-                    },
-                    {
-                      name: 'ELIZABETH BARR',
-                      role: 'Standing Counsel, Arunachal Pradesh in Supreme Court of India',
-                      office: 'Managed out of Guwahati & Itanagar',
-                      img: elizabethImg,
                     },
                   ].map((member, idx) => (
                     <motion.div
@@ -486,7 +480,7 @@ const Index = () => {
         className="py-16 bg-gradient-to-br from-slate-50 to-slate-100"
       >
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div variants={itemVariants} className="text-center mb-12">
+          <motion.div variants={itemVariants} className="text-center mb-8">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-800">
               ABOUT <span className="text-yellow-600">US</span>
             </h2>
@@ -515,7 +509,7 @@ const Index = () => {
         className="py-16 bg-white"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div variants={itemVariants} className="text-center mb-12">
+          <motion.div variants={itemVariants} className="text-center mb-8">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-800">
               RAVEN LAW <span className="text-yellow-600">LLP</span>
             </h2>
@@ -523,10 +517,10 @@ const Index = () => {
           </motion.div>
 
           {/* Delhi Office */}
-          <motion.div variants={itemVariants} className="mb-16">
+          <motion.div variants={itemVariants} className="mb-8">
             <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-8 pb-3 border-b-2 border-yellow-600">NEW DELHI OFFICE</h3>
 
-            <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <div className="grid  gap-6 mb-8">
               <motion.div
                 variants={itemVariants}
                 whileHover={{ y: -5 }}
@@ -547,7 +541,7 @@ const Index = () => {
                 </p>
               </motion.div>
 
-              <motion.div
+              {/* <motion.div
                 variants={itemVariants}
                 whileHover={{ y: -5 }}
                 className="bg-gradient-to-br from-slate-50 to-white p-6 rounded-xl border-2 border-slate-200 hover:border-yellow-600 shadow-lg hover:shadow-2xl transition-all"
@@ -564,7 +558,7 @@ const Index = () => {
                 <p className="text-slate-700 leading-relaxed text-sm">
                   Miss Elizabeth Barr is the standing counsel for Arunachal Pradesh in the Supreme Court of India and she looks after the offices of the firm in Itanagar and Guwahati. Miss Barr specialises in matters involving Constitutional law, mines and minerals, Arbitration, Civil, Commercial, Criminal law arising out of the North-Eastern states like Assam and Arunachal Pradesh.
                 </p>
-              </motion.div>
+              </motion.div> */}
             </div>
 
             {/* Delhi Team Members */}
@@ -711,7 +705,7 @@ const Index = () => {
         className="py-16 bg-gradient-to-br from-slate-50 to-slate-100"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div variants={itemVariants} className="text-center mb-12">
+          <motion.div variants={itemVariants} className="text-center mb-8">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-800">
               SEMINAR <span className="text-yellow-600">RECORDING</span>
             </h2>
@@ -756,7 +750,7 @@ const Index = () => {
         className="py-16 bg-white"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div variants={itemVariants} className="text-center mb-12">
+          <motion.div variants={itemVariants} className="text-center mb-8">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-800">
               <span className="text-yellow-600">ARTICLES</span>
             </h2>
@@ -801,7 +795,7 @@ const Index = () => {
         className="py-16 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div variants={itemVariants} className="text-center mb-12">
+          <motion.div variants={itemVariants} className="text-center mb-8">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
               CONTACT <span className="text-yellow-600">US</span>
             </h2>
