@@ -5,7 +5,6 @@ import { useState } from "react";
 import ajayTewariImg from "@/assets/ajay-tewari.jpg";
 import abhimanyuImg from "@/assets/abhimanyu-tewari.jpg";
 import amitabhImg from "@/assets/amitabh-tewari.jpg";
-import elizabethImg from "@/assets/elizabeth-barr.jpg";
 import sanyaImg from "@/assets/sanya-kaushal.jpg";
 import tusharImg from "@/assets/tushar-bathija.jpg";
 import rioImg from "@/assets/rio.jpg";
