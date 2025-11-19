@@ -12,6 +12,10 @@ import dilmrigImg from "@/assets/dilmrig-nayani.jpg";
 import mahimaImg from "@/assets/mahima-gupta.jpg";
 import shivamImg from "@/assets/shivam-sharma.jpg";
 import satvikImg from "@/assets/satvik-bansal.jpg";
+import siddhant from "@/assets/siddhant.png";
+import aniket from "@/assets/aniket.png"
+import dummy from "@/assets/dummy.png"
+import ishaan from "@/assets/ishaan.png"
 import Image from "next/image";
 
 const containerVariants = {
@@ -35,11 +39,11 @@ const Index = () => {
   const offices = [
     {
       title: "DELHI OFFICE",
-      address: "B1/77, Block B 1, Safdarjung Enclave, New Delhi, Delhi 110029, India",
+      address: "GF, B4/39, Safdarjung Enclave, New Delhi-110029, India",
       email: "delhioffice@tewariandassociates.com",
       phone: ["011-26716556", "+919873446301"],
-      lat: 28.5611,
-      lng: 77.1995,
+      lat: 28.565254,
+      lng: 77.195084,
     },
     {
       title: "CHANDIGARH OFFICE",
@@ -48,15 +52,7 @@ const Index = () => {
       phone: ["+911724628544", "+91 7015498386"],
       lat: 30.7333,
       lng: 76.7794,
-    },
-    {
-      title: "ITANAGAR OFFICE",
-      address: "Qtr No. D71, Sector P, Itanagar 791111",
-      email: "",
-      phone: ["+918375978714"],
-      lat: 27.0844,
-      lng: 93.6053,
-    },
+    }
   ];
 
 
@@ -231,7 +227,7 @@ const Index = () => {
                 </button>
               </div>
               <div className="p-6 grid md:grid-cols-2 gap-6">
-                {offices.slice(0, 2).map((office, idx) => (
+                {offices.map((office, idx) => (
                   <div key={idx} className="border-2 border-slate-200 rounded-xl p-6 hover:border-yellow-600 transition-colors bg-gradient-to-br from-slate-50 to-white shadow-lg">
                     <h3 className="text-lg font-bold mb-4 text-slate-800">{office.title}</h3>
                     <div className="space-y-3 text-sm mb-4">
@@ -297,7 +293,7 @@ const Index = () => {
               </div>
 
               <div className="p-4 space-y-4">
-                {offices.slice(0, 2).map((office, idx) => (
+                {offices.map((office, idx) => (
                   <div key={idx} className="border border-slate-200 rounded-lg p-3">
                     <div className="flex items-center justify-between">
                       <h4 className="text-sm font-bold text-slate-800">{office.title}</h4>
@@ -370,7 +366,7 @@ const Index = () => {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="text-lg md:text-xl mb-3 opacity-90"
           >
-            With offices in New Delhi, Chandigarh, Guwahati and Itanagar
+            With offices in New Delhi and Chandigarh
           </motion.p>
 
           {/* Inner Section */}
@@ -391,7 +387,7 @@ const Index = () => {
                 className="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-10 bg-slate-900/60 border-2 border-yellow-600/30 rounded-2xl p-6 md:p-10 backdrop-blur-md shadow-2xl mb-2"
               >
                 {/* LEFT IMAGE */}
-                <div className="flex-shrink-0">
+                {/* <div className="flex-shrink-0">
                   <Image
                     src={ajayTewariImg}
                     alt="Hon'ble Justice Ajay Tewari"
@@ -399,19 +395,18 @@ const Index = () => {
                     height={180}
                     className="w-32 h-32 md:w-44 md:h-44 rounded-full object-cover border-4 border-yellow-600 shadow-xl"
                   />
-                </div>
+                </div> */}
 
                 {/* RIGHT CONTENT */}
                 <div className="text-center md:text-left flex flex-col justify-center">
-                  <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
+                  {/* <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
                     HON&apos;BLE JUSTICE AJAY TEWARI (RETD.)
-                  </h3>
-                  <p className="text-base md:text-lg text-yellow-500 font-semibold mb-4">
+                  </h3> */}
+                  {/* <p className="text-base md:text-lg text-yellow-500 font-semibold mb-4">
                     Punjab and Haryana High Court
-                  </p>
+                  </p> */}
                   <p className="text-white/90 max-w-3xl text-sm md:text-base leading-relaxed">
-                    Raven Law LLP is a fourth-generation law office with offices in New Delhi, Chandigarh,
-                    Guwahati, and Itanagar. The firm continues its long-standing tradition of legal excellence
+                    Raven Law LLP is a fourth-generation law firm with offices in New Delhi and Chandigarh. The firm continues its long-standing tradition of legal excellence
                     and ethical practice, offering a wide range of litigation and advisory services.
                   </p>
                 </div>
@@ -488,11 +483,7 @@ const Index = () => {
 
           <motion.div variants={itemVariants} className="space-y-6 text-center">
             <p className="text-base md:text-lg text-slate-700 leading-relaxed">
-              RAVEN LAW LLP is a boutique law firm specialising in litigation and dispute resolution with offices in Chandigarh, New Delhi, Guwahati and Itanagar. The firm offers a range of all kind of services pertaining to litigation and dispute resolution across fora including Supreme Court, High Courts, Tribunals etc. The firm has a legacy of more than 80 years in providing quality legal services in practice areas involving civil, criminal, corporate and commercial, real estate, sports, entertainment, real estate and arbitration law. The partners are assisted by a team of 10 lawyers and other support staff across Delhi and Chandigarh.
-            </p>
-
-            <p className="text-base md:text-lg text-slate-700 leading-relaxed">
-              The firm is led by Justice Ajay Tewari (Retd.), Abhimanyu Tewari and Amitabh Tewari. Justice Ajay Tewari (Retd.) is a Senior Advocate who graduated in law from Panjab University in 1982, before starting his practice. After 26 years of practice, he was elevated as an additional judge of the high court in July 2008. Justice Ajay Tewari (Retd.) retired in March, 2022 after almost 14 years on the bench. Justice Ajay Tewari (Retd.) has extensive experience in matters pertaining to all fields of law including but not limited to Service, Constitutional, Civil, Criminal, Corporate and Arbitration law.
+              RAVEN LAW LLP is a law firm led by Abhimanyu Tewari and Amitabh Tewari, specialising in litigation and dispute resolution with offices in Chandigarh and New Delhi. The firm offers a range of all kind of services pertaining to litigation and dispute resolution across fora including Supreme Court, High Courts, Tribunals etc. The firm has a legacy of more than 80 years in providing quality legal services in practice areas involving civil, criminal, corporate and commercial, real estate, sports, entertainment, real estate and arbitration law. The partners are assisted by a team of 10 lawyers and other support staff across Delhi and Chandigarh.
             </p>
           </motion.div>
         </div>
@@ -534,6 +525,7 @@ const Index = () => {
                   height={144}
                 />
                 <h4 className="text-xl font-bold text-slate-800 mb-1 text-center">ABHIMANYU TEWARI</h4>
+                <p className="text-gray-600 md:font-semibold text-sm text-center">Partner</p>
                 <p className="text-yellow-600 md:font-semibold text-sm mb-4 text-center">Advocate-On-Record Supreme Court of India</p>
                 <p className="text-slate-700 leading-relaxed text-sm">
                   The Delhi Office is led by Abhimanyu Tewari who is an Advocate on Record at the Supreme Court of India. Mr. Abhimanyu Tewari graduated from St. Stephens, Delhi in 2008 after completing his Bachelor of Arts. Thereafter, he went on to pursue his law from Punjab University, Chandigarh before starting his practice in the Supreme Court of India in 2012. Mr. Abhimanyu Tewari has extensive experience in handling matters pertaining to civil, criminal, corporate and commercial, real estate, sports, entertainment, real estate, arbitration law in the Supreme Court of India, Punjab and Haryana High Court at Chandigarh, National Company Law Tribunal etc.
@@ -564,22 +556,22 @@ const Index = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 {
-                  name: "SANYA KAUSHAL",
-                  img: sanyaImg,
-                  role: "Senior Associate",
-                  desc: "Sanya completed her graduation from Himachal Pradesh University, Summer Hill Shimla in the year 2017 and thereafter obtained her masters in corporate law from Guru Gobind Singh Indraprastha University (GGSIPU), New Delhi in 2018. With over 4 years practice experience, Sanya has specialised in the field of civil law, criminal law, matrimonial matters and consumer disputes. She regularly appears before various courts in New Delhi and Chandigarh including the Supreme Court of India, Delhi High Court, Delhi District Courts, State Consumer Disputes Redressal Commissions and the Punjab and Haryana High Court. Sanya appears before various courts and forums in Himachal Pradesh as well, both at the district and the appellate level.",
+                  name: "Siddhant Saroha",
+                  img: siddhant,
+                  role: "Partner",
+                  desc: "Siddhant Saroha is an Advocate practicing before the Hon’ble Supreme Court of India, the Hon’ble Delhi High Court, the Hon’ble High Court of Punjab and Haryana, the National Company Law Tribunal (NCLT), the National Company Law Appellate Tribunal (NCLAT), and various other judicial and quasi-judicial forums across India.He completed his BBA (Hons.) from Jindal Global Business School in 2019, followed by his LL.B. from Jindal Global Law School, graduating in 2022. He began his legal career with Tewari & Associates as an Associate and was elevated to Partner at Raven Law LLP in January 2025. Since then, he has become an important and integral part of the firm’s leadership and litigation practice.Siddhant specialises in Criminal Law, Civil Law, Service Law, Arbitration, Election Petitions, Family Law, Election Law etc.. His practice spans a wide spectrum of litigation, including complex bail matters, trial-level criminal defence, high-stakes civil and commercial disputes, contractual and corporate arbitrations, sensitive matrimonial and family disputes, and service matters involving disciplinary action, suspension, and promotions. He also regularly handles election petitions.He is known for his strategic litigation approach, meticulous research, clear drafting, and strong courtroom advocacy. ",
                 },
                 {
-                  name: "TUSHAR BATHIJA",
-                  img: tusharImg,
-                  role: "Associate",
-                  desc: "Tushar graduated in law in 2021 from National Law University, Odisha. He is an avid reader and writer on issues relating to law, the criminal justice system, commercial law, arbitration law, and policy. Tushar has advised on diverse, complex and challenging matters relating to Criminal and Commercial laws. Tushar regularly appears before the Hon'ble Supreme Court of India, various High Courts, District Courts in Delhi, and other Tribunals and fora. Besides practicing law, Tushar also takes keen interest in interacting with students by way of lectures, moot courts, seminars etc. on law as well as non-law subjects.",
+                  name: "Sidhant Awasthy",
+                  img: dummy,
+                  role: "Partner",
+                  desc: "Sidhant Awasthy is an advocate with a diverse and dynamic practice, representing clients across criminal, civil–commercial, intellectual property, and constitutional law matters. An alumnus of The Scindia School, Gwalior, he went on to pursue Political Science (Hons.) at Kirori Mal College, University of Delhi, and subsequently earned his law degree from the Faculty of Law, University of Delhi.Sidhant has significant experience in criminal litigation, including cases under special statutes such as the NDPS Act, and regularly advises and represents clients in commercial disputes, trade mark and copyright infringement matters, and issues involving constitutional rights and public law. His practice spans both trial and appellate work, with a strong emphasis on strategic case-building and effective courtroom advocacy.He frequently appears before the Supreme Court of India, as well as the High Courts of Delhi, Punjab & Haryana, and Assam, and various tribunals and subordinate courts.Beyond the courtroom, Sidhant maintains a keen interest in public speaking and has participated in — and won — multiple national-level debating competitions. He is also passionate about sports, particularly squash and golf, which he pursues actively.",
                 },
                 {
-                  name: "NEIKETOU RIO",
-                  img: rioImg,
+                  name: "Aniket Kumar Parcha",
+                  img: aniket,
                   role: "Associate",
-                  desc: "Rio completed his graduation in the year 2022 from Amity University Gurgaon. He regularly appears before various forums like Delhi High Court, Guwahati High Court, District Courts in Delhi and before the Session Judge Court, Kohima to name a few. Rio's interest lies in handling and researching on matters involving criminal law.",
+                  desc: "AAdvocate Aniket Kumar Parcha is an advocate with a dynamic and evolving practice, representing clients across criminal, civil, corporate, and matrimonial matters. He regularly appears before the Hon’ble Supreme Court of India, the High Court of Delhi, various District Courts, and multiple tribunals, handling a broad spectrum of contentious and advisory work.Aniket’s professional experience encompasses drafting and arguing petitions, complaints, and applications, as well as conducting detailed legal research to support complex litigation. He has represented clients in matters and assisted Seniors under diverse statutory frameworks, including corporate and commercial disputes, matrimonial proceedings, and criminal trials.With a methodical, research-oriented, and solution-driven approach, Aniket brings precision and clarity to every case he handles. His practice reflects a balance between rigorous preparation and confident courtroom advocacy, making him an integral part of the firm’s litigation team.",
                 },
               ].map((member, idx) => (
                 <motion.div
@@ -607,7 +599,7 @@ const Index = () => {
           <motion.div variants={itemVariants} className="mt-16">
             <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-8 pb-3 border-b-2 border-yellow-600">CHANDIGARH OFFICE</h3>
 
-            <div className="mb-6">
+            {/* <div className="mb-6">
               <motion.div
                 variants={itemVariants}
                 whileHover={{ y: -5 }}
@@ -626,28 +618,28 @@ const Index = () => {
                   The Chandigarh office is led by Amitabh Tewari. Mr. Amitabh Tewari graduated from Government Law College, Mumbai in 2014 and thereafter went on to pursue the Bachelor of Civil Law from the prestigious University of Oxford in 2015. Mr. Amitabh Tewari worked in Cyril Amarchand Mangaldas, Mumbai and Wadia Ghandy & Co, Delhi before starting his independent practice in Chandigarh. Mr. Amitabh Tewari has recently been awarded a certificate by Forbes in the category of Top 100 lawyers - Below ten years of experience. Mr Amitabh Tewari regularly appears before the Punjab and Haryana High Court National Company law Tribunal Chandigarh, Real Estate Regulatory Authority, Punjab, Real Estate Appellate Tribunal, Punjab, Real Estate Appellate Tribunal, Haryana, Consumer forum etc. Mr. Amitabh Tewari has extensive experience in sports law as he has represented various football clubs, coaches, players before the All India Football Federation and the FIFA Dispute Resolution Chamber, Zurich.
                 </p>
               </motion.div>
-            </div>
+            </div> */}
 
             {/* Chandigarh Team Members */}
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
                 {
-                  name: "DILMRIG NAYANI",
+                  name: "Amitabh Tewari",
+                  role: "Advocate, BLS LL.B, BCL (Oxford University)",
+                  img: amitabhImg,
+                  desc: "The Chandigarh office is led by Amitabh Tewari. Mr. Amitabh Tewari graduated from Government Law College, Mumbai in 2014 and thereafter went on to pursue the Bachelor of Civil Law from the prestigious University of Oxford in 2015. Mr. Amitabh Tewari worked in Cyril Amarchand Mangaldas, Mumbai and Wadia Ghandy & Co, Delhi before starting his independent practice in Chandigarh. Mr. Amitabh Tewari has recently been awarded a certificate by Forbes in the category of Top 100 lawyers - Below ten years of experience. Mr Amitabh Tewari regularly appears before the Punjab and Haryana High Court National Company law Tribunal Chandigarh, Real Estate Regulatory Authority, Punjab, Real Estate Appellate Tribunal, Punjab, Real Estate Appellate Tribunal, Haryana, Consumer forum etc. Mr. Amitabh Tewari has extensive experience in sports law as he has represented various football clubs, coaches, players before the All India Football Federation and the FIFA Dispute Resolution Chamber, Zurich.",
+                },
+                {
+                  name: "Satvik Bansal",
                   role: "Senior Associate",
-                  img: dilmrigImg,
-                  desc: "Dilmrig graduated from the National University of Advanced Legal Studies (NUALS), Kochi in 2020 with B.A. LL.B. (Hons.) and a corporate law specialization. She completed her post-graduation (LL.M.) from the National Academy of Legal Studies and Research (NALSAR), Hyderabad. Dilmrig's areas of practice primarily include litigation in Civil and Criminal Law, Insolvency and Bankruptcy law, pharmaceutical laws, arbitration and Real Estate disputes. She is adept at managing matters before the Punjab and Haryana High Court, Supreme Court of India, Delhi High Court, Real Estate Regulatory Authority, National Company Law Tribunal and other forums located in Chandigarh and New Delhi. Having dealt with a diverse range of clients, Dilmrig specialises in formulating tailor-made legal advisories, petitions and legal strategies for disputes.",
+                  img: satvikImg,
+                  desc: "Satvik graduated from Government Law College, Mumbai in the year 2021. He is a Criminal and Civil Law enthusiast appearing before the Punjab and Haryana High Court, Real Estate Regulatory Authority, Central Administrative Tribunal and other forums in Chandigarh. He also has experience in appearing before the Bombay High Court, Maharasthra Adminstrative Tribunal, Labour Courts and NCLT, Mumbai.",
                 },
                 {
-                  name: "MAHIMA GUPTA",
+                  name: "Ishaan Mundeja",
                   role: "Associate",
-                  img: mahimaImg,
-                  desc: "Mahima graduated from O.P. Jindal Global University, Haryana in the year 2021. Her scope of practice focuses on civil and criminal litigation, real estate disputes, consumer disputes and service law matters. Mahima is well versed in handling matters and appearing before various forums such as the Punjab and Haryana High Court, Central Administrative Tribunal (CAT), District and State Consumer Disputes Redressal Commissions. She has keen interest in matters involving Insolvency and Bankruptcy Code, Arbitration and laws relating to Micro, Small and Medium Enterprises (MSME).",
-                },
-                {
-                  name: "SHIVAM SHARMA",
-                  role: "Associate",
-                  img: shivamImg,
-                  desc: "Shivam is a first-generation lawyer, who graduated in 2020 and thereafter obtained his masters in 2022, from University Institute of Legal Studies, Punjab University, Chandigarh. He is a criminal law enthusiast who regularly appears before the Punjab and Haryana High Court, Central Administrative Tribunal (CAT) and other courts and forums in Chandigarh, including the District and Sessions Court and consumer forums.",
+                  img: ishaan,
+                  desc: "Adv. Ishaan Mundeja is an Associate with the firm’s litigation team, engaged in matters across Punjab, Haryana, and Chandigarh. A graduate of Symbiosis Law School, Pune, he has developed extensive experience before the Hon’ble Punjab and Haryana High Court and various subordinate and quasi-judicial forums. His work encompasses criminal, commercial, and regulatory disputes, with a focus on drafting, legal research, and strategic case assistance.Ishaan is also actively involved in pro bono initiatives, with a particular commitment to advancing causes of civic welfare and accessibility rights.Drawing from varied professional and personal experiences, Ishaan approaches legal issues with empathy and practical insight. Outside the profession, he is deeply passionate about music and songwriting — a creative pursuit that complements his analytical thinking and reinforces his belief in balance, expression, and integrity, both in life and in law.",
                 },
               ].map((member, idx) => (
                 <motion.div
@@ -670,7 +662,7 @@ const Index = () => {
               ))}
             </div>
 
-            <div className="mt-6">
+            {/* <div className="mt-6">
               <motion.div
                 variants={itemVariants}
                 whileHover={{ y: -5 }}
@@ -689,7 +681,7 @@ const Index = () => {
                   Satvik graduated from Government Law College, Mumbai in the year 2021. He is a Criminal and Civil Law enthusiast appearing before the Punjab and Haryana High Court, Real Estate Regulatory Authority, Central Administrative Tribunal and other forums in Chandigarh. He also has experience in appearing before the Bombay High Court, Maharasthra Adminstrative Tribunal, Labour Courts and NCLT, Mumbai.
                 </p>
               </motion.div>
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </motion.section>
@@ -801,7 +793,7 @@ const Index = () => {
             <div className="h-1 w-20 bg-yellow-600 mx-auto rounded-full"></div>
           </motion.div>
 
-          <motion.div variants={containerVariants} className="grid md:grid-cols-3 gap-6">
+          <motion.div variants={containerVariants} className="grid md:grid-cols-2 gap-6">
             {offices.map((office, idx) => (
               <motion.div
                 key={idx}
@@ -845,7 +837,7 @@ const Index = () => {
           </motion.div>
 
           <motion.div variants={itemVariants} className="text-center mt-12">
-            <p className="text-white/60 text-sm">© 2025 by tewariandassociates.com. All rights reserved.</p>
+            <p className="text-white/60 text-sm">© 2025 by Raven Law LLP All rights reserved.</p>
           </motion.div>
         </div>
       </motion.section>
