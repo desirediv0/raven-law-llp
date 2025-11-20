@@ -405,7 +405,7 @@ const Index = () => {
                   {/* <p className="text-base md:text-lg text-yellow-500 font-semibold mb-4">
                     Punjab and Haryana High Court
                   </p> */}
-                  <p className="text-white/90 max-w-3xl text-sm md:text-base leading-relaxed">
+                  <p className="text-white/90 max-w-3xl text-sm md:text-base leading-relaxed text-justify">
                     Raven Law LLP is a fourth-generation law firm with offices in New Delhi and Chandigarh. The firm continues its long-standing tradition of legal excellence
                     and ethical practice, offering a wide range of litigation and advisory services.
                   </p>
@@ -482,7 +482,7 @@ const Index = () => {
           </motion.div>
 
           <motion.div variants={itemVariants} className="space-y-6 text-center">
-            <p className="text-base md:text-lg text-slate-700 leading-relaxed">
+            <p className="text-base md:text-lg text-slate-700 leading-relaxed text-justify">
               RAVEN LAW LLP is a law firm led by Abhimanyu Tewari and Amitabh Tewari, specialising in litigation and dispute resolution with offices in Chandigarh and New Delhi. The firm offers a range of all kind of services pertaining to litigation and dispute resolution across fora including Supreme Court, High Courts, Tribunals etc. The firm has a legacy of more than 80 years in providing quality legal services in practice areas involving civil, criminal, corporate and commercial, real estate, sports, entertainment, real estate and arbitration law. The partners are assisted by a team of 10 lawyers and other support staff across Delhi and Chandigarh.
             </p>
           </motion.div>
@@ -527,7 +527,7 @@ const Index = () => {
                 <h4 className="text-xl font-bold text-slate-800 mb-1 text-center">ABHIMANYU TEWARI</h4>
                 <p className="text-gray-600 md:font-semibold text-sm text-center">Partner</p>
                 <p className="text-yellow-600 md:font-semibold text-sm mb-4 text-center">Advocate-On-Record Supreme Court of India</p>
-                <p className="text-slate-700 leading-relaxed text-sm">
+                <p className="text-slate-700 leading-relaxed text-sm text-justify">
                   The Delhi Office is led by Abhimanyu Tewari who is an Advocate on Record at the Supreme Court of India. Mr. Abhimanyu Tewari graduated from St. Stephens, Delhi in 2008 after completing his Bachelor of Arts. Thereafter, he went on to pursue his law from Punjab University, Chandigarh before starting his practice in the Supreme Court of India in 2012. Mr. Abhimanyu Tewari has extensive experience in handling matters pertaining to civil, criminal, corporate and commercial, real estate, sports, entertainment, real estate, arbitration law in the Supreme Court of India, Punjab and Haryana High Court at Chandigarh, National Company Law Tribunal etc.
                 </p>
               </motion.div>
@@ -546,7 +546,7 @@ const Index = () => {
                 />
                 <h4 className="text-xl font-bold text-slate-800 mb-1 text-center">ELIZABETH BARR</h4>
                 <p className="text-yellow-600 md:font-semibold text-sm mb-4 text-center">Standing Counsel, Arunachal Pradesh in Supreme Court of India</p>
-                <p className="text-slate-700 leading-relaxed text-sm">
+                <p className="text-slate-700 leading-relaxed text-sm text-justify">
                   Miss Elizabeth Barr is the standing counsel for Arunachal Pradesh in the Supreme Court of India and she looks after the offices of the firm in Itanagar and Guwahati. Miss Barr specialises in matters involving Constitutional law, mines and minerals, Arbitration, Civil, Commercial, Criminal law arising out of the North-Eastern states like Assam and Arunachal Pradesh.
                 </p>
               </motion.div> */}
@@ -559,13 +559,13 @@ const Index = () => {
                   name: "Siddhant Saroha",
                   img: siddhant,
                   role: "Partner",
-                  desc: "Siddhant Saroha is an Advocate practicing before the Hon’ble Supreme Court of India, the Hon’ble Delhi High Court, the Hon’ble High Court of Punjab and Haryana, the National Company Law Tribunal (NCLT), the National Company Law Appellate Tribunal (NCLAT), and various other judicial and quasi-judicial forums across India.He completed his BBA (Hons.) from Jindal Global Business School in 2019, followed by his LL.B. from Jindal Global Law School, graduating in 2022. He began his legal career with Tewari & Associates as an Associate and was elevated to Partner at Raven Law LLP in January 2025. Since then, he has become an important and integral part of the firm’s leadership and litigation practice.Siddhant specialises in Criminal Law, Civil Law, Service Law, Arbitration, Election Petitions, Family Law, Election Law etc.. His practice spans a wide spectrum of litigation, including complex bail matters, trial-level criminal defence, high-stakes civil and commercial disputes, contractual and corporate arbitrations, sensitive matrimonial and family disputes, and service matters involving disciplinary action, suspension, and promotions. He also regularly handles election petitions.He is known for his strategic litigation approach, meticulous research, clear drafting, and strong courtroom advocacy. ",
+                  desc: "Siddhant Saroha is an Advocate practicing before the Hon’ble Supreme Court of India, the Hon’ble Delhi High Court, the Hon’ble High Court of Punjab and Haryana, the National Company Law Tribunal (NCLT), the National Company Law Appellate Tribunal (NCLAT), and various other judicial and quasi-judicial forums across India. He completed his BBA (Hons.) from Jindal Global Business School in 2019, followed by his LL.B. from Jindal Global Law School, graduating in 2022. He began his legal career with Tewari & Associates as an Associate and was elevated to Partner at Raven Law LLP in January 2025. Since then, he has become an important and integral part of the firm’s leadership and litigation practice.Siddhant specialises in Criminal Law, Civil Law, Service Law, Arbitration, Election Petitions, Family Law, Election Law etc.. His practice spans a wide spectrum of litigation, including complex bail matters, trial-level criminal defence, high-stakes civil and commercial disputes, contractual and corporate arbitrations, sensitive matrimonial and family disputes, and service matters involving disciplinary action, suspension, and promotions. He also regularly handles election petitions. He is known for his strategic litigation approach, meticulous research, clear drafting, and strong courtroom advocacy. ",
                 },
                 {
                   name: "Sidhant Awasthy",
                   img: dummy,
                   role: "Partner",
-                  desc: "Sidhant Awasthy is an advocate with a diverse and dynamic practice, representing clients across criminal, civil–commercial, intellectual property, and constitutional law matters. An alumnus of The Scindia School, Gwalior, he went on to pursue Political Science (Hons.) at Kirori Mal College, University of Delhi, and subsequently earned his law degree from the Faculty of Law, University of Delhi.Sidhant has significant experience in criminal litigation, including cases under special statutes such as the NDPS Act, and regularly advises and represents clients in commercial disputes, trade mark and copyright infringement matters, and issues involving constitutional rights and public law. His practice spans both trial and appellate work, with a strong emphasis on strategic case-building and effective courtroom advocacy.He frequently appears before the Supreme Court of India, as well as the High Courts of Delhi, Punjab & Haryana, and Assam, and various tribunals and subordinate courts.Beyond the courtroom, Sidhant maintains a keen interest in public speaking and has participated in — and won — multiple national-level debating competitions. He is also passionate about sports, particularly squash and golf, which he pursues actively.",
+                  desc: "Sidhant Awasthy is an advocate with a diverse and dynamic practice, representing clients across criminal, civil–commercial, intellectual property, and constitutional law matters. An alumnus of The Scindia School, Gwalior, he went on to pursue Political Science (Hons.) at Kirori Mal College, University of Delhi, and subsequently earned his law degree from the Faculty of Law, University of Delhi. Sidhant has significant experience in criminal litigation, including cases under special statutes such as the NDPS Act, and regularly advises and represents clients in commercial disputes, trade mark and copyright infringement matters, and issues involving constitutional rights and public law. His practice spans both trial and appellate work, with a strong emphasis on strategic case-building and effective courtroom advocacy. He frequently appears before the Supreme Court of India, as well as the High Courts of Delhi, Punjab & Haryana, and Assam, and various tribunals and subordinate courts.Beyond the courtroom, Sidhant maintains a keen interest in public speaking and has participated in — and won — multiple national-level debating competitions. He is also passionate about sports, particularly squash and golf, which he pursues actively.",
                 },
                 {
                   name: "Aniket Kumar Parcha",
@@ -589,7 +589,7 @@ const Index = () => {
                   />
                   <h4 className="text-lg font-bold text-slate-800 mb-1 text-center">{member.name}</h4>
                   <p className="text-yellow-600 md:font-semibold text-sm mb-3 text-center">{member.role}</p>
-                  <p className="text-slate-600 text-sm leading-relaxed">{member.desc}</p>
+                  <p className="text-slate-600 text-sm leading-relaxed text-justify">{member.desc}</p>
                 </motion.div>
               ))}
             </div>
@@ -614,7 +614,7 @@ const Index = () => {
                 />
                 <h4 className="text-xl font-bold text-slate-800 mb-1 text-center">AMITABH TEWARI</h4>
                 <p className="text-yellow-600 md:font-semibold text-sm mb-4 text-center">Advocate, BLS LL.B, BCL (Oxford University)</p>
-                <p className="text-slate-700 leading-relaxed text-sm">
+                <p className="text-slate-700 leading-relaxed text-sm text-justify">
                   The Chandigarh office is led by Amitabh Tewari. Mr. Amitabh Tewari graduated from Government Law College, Mumbai in 2014 and thereafter went on to pursue the Bachelor of Civil Law from the prestigious University of Oxford in 2015. Mr. Amitabh Tewari worked in Cyril Amarchand Mangaldas, Mumbai and Wadia Ghandy & Co, Delhi before starting his independent practice in Chandigarh. Mr. Amitabh Tewari has recently been awarded a certificate by Forbes in the category of Top 100 lawyers - Below ten years of experience. Mr Amitabh Tewari regularly appears before the Punjab and Haryana High Court National Company law Tribunal Chandigarh, Real Estate Regulatory Authority, Punjab, Real Estate Appellate Tribunal, Punjab, Real Estate Appellate Tribunal, Haryana, Consumer forum etc. Mr. Amitabh Tewari has extensive experience in sports law as he has represented various football clubs, coaches, players before the All India Football Federation and the FIFA Dispute Resolution Chamber, Zurich.
                 </p>
               </motion.div>
@@ -657,7 +657,7 @@ const Index = () => {
                   />
                   <h4 className="text-lg font-bold text-slate-800 mb-1 text-center">{member.name}</h4>
                   <p className="text-yellow-600 md:font-semibold text-sm mb-3 text-center">{member.role}</p>
-                  <p className="text-slate-600 text-sm leading-relaxed">{member.desc}</p>
+                  <p className="text-slate-600 text-sm leading-relaxed text-justify">{member.desc}</p>
                 </motion.div>
               ))}
             </div>
@@ -677,7 +677,7 @@ const Index = () => {
                 />
                 <h4 className="text-xl font-bold text-slate-800 mb-1 text-center">SATVIK BANSAL</h4>
                 <p className="text-yellow-600 md:font-semibold text-sm mb-4 text-center">Associate</p>
-                <p className="text-slate-700 leading-relaxed text-sm">
+                <p className="text-slate-700 leading-relaxed text-sm text-justify">
                   Satvik graduated from Government Law College, Mumbai in the year 2021. He is a Criminal and Civil Law enthusiast appearing before the Punjab and Haryana High Court, Real Estate Regulatory Authority, Central Administrative Tribunal and other forums in Chandigarh. He also has experience in appearing before the Bombay High Court, Maharasthra Adminstrative Tribunal, Labour Courts and NCLT, Mumbai.
                 </p>
               </motion.div>
@@ -775,6 +775,60 @@ const Index = () => {
           </motion.div>
         </div>
       </motion.section>
+
+
+      <motion.section
+        id="disclaimer"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={containerVariants}
+        className="py-12 bg-gradient-to-br from-slate-50 to-slate-100"
+      >
+        <div className=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Heading */}
+          <h1 className="text-3xl md:text-4xl font-semibold mb-10 text-slate-800 text-center tracking-tight">
+            Legal Disclaimer
+          </h1>
+
+          {/* Two-Column Layout */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+            {/* LEFT SIDE CONTENT */}
+            <div>
+              <p className="text-sm md:text-base leading-relaxed mb-6 text-slate-700">
+                The Bar Council of India prohibits advocates from engaging in any form of advertisement or solicitation.
+                By accessing the Raven Law LLP website (our website), the user acknowledges that:
+              </p>
+
+              <ul className="space-y-4 text-sm md:text-base leading-relaxed list-disc pl-6 text-slate-700">
+                <li>The user is voluntarily using our website to gain information about us for their information and use. They also acknowledge that there has been no attempt by us to advertise or solicit work.</li>
+                <li>Any information obtained or downloaded from our website does not lead to the creation of an attorney-client relationship between the Firm and the user.</li>
+                <li>The content on this website is for informational purposes only and cannot be construed to be a form of legal opinion or legal advice.</li>
+                <li>Raven Law LLP will not be held liable for any consequences from actions taken based on the materials or information provided on this website.</li>
+              </ul>
+            </div>
+
+            {/* RIGHT SIDE YELLOW BOX */}
+            <div className="bg-amber-50 p-6 rounded-xl border border-amber-200 shadow-md">
+              <p className="text-sm md:text-base text-amber-800 font-medium">
+                The Bar Council of India prohibits advocates from engaging in any form of advertisement or solicitation.
+                By accessing the Raven Law LLP website (our website), the user acknowledges that:
+              </p>
+
+              <ul className="mt-4 space-y-3 text-xs md:text-sm text-amber-700 list-disc pl-6">
+                <li>The user is voluntarily using our website to gain information about us for their information and use. They also acknowledge that there has been no attempt by us to advertise or solicit work.</li>
+                <li>Any information obtained or downloaded from our website does not lead to the creation of an attorney-client relationship between the Firm and the user.</li>
+                <li>The content on this website is for informational purposes only and cannot be construed to be a form of legal opinion or legal advice.</li>
+                <li>Raven Law LLP will not be held liable for any consequences from actions taken based on the materials or information provided on this website.</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </motion.section>
+
+
 
       {/* Contact Section */}
       <motion.section
