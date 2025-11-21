@@ -622,6 +622,8 @@ const Index = () => {
               </motion.div> */}
             </div>
 
+
+
             {/* Delhi Team Members */}
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
@@ -629,7 +631,7 @@ const Index = () => {
                   name: "Siddhant Saroha",
                   img: siddhant,
                   role: "Partner",
-                  desc: "Siddhant Saroha is an Advocate practicing before the Hon'ble Supreme Court of India. He also appears before the Hon'ble Delhi High Court. He completed his BBA (Hons.) from Jindal Global Business School in 2019, followed by his LL.B. from Jindal Global Law School, graduating in 2022. He began his legal career with Tewari & Associates as an Associate and was elevated to Partner at Raven Law LLP in January 2025. Since then, he has become an important and integral part of the firm's leadership and litigation practice.Siddhant specialises in Criminal Law, Civil Law, Service Law, Arbitration, Election Petitions, Family Law, Election Law etc.. His practice spans a wide spectrum of litigation, including complex bail matters, trial-level criminal defence, high-stakes civil and commercial disputes, contractual and corporate arbitrations, sensitive matrimonial and family disputes, and service matters involving disciplinary action, suspension, and promotions. He also regularly handles election petitions. He is known for his strategic litigation approach, meticulous research, clear drafting, and strong courtroom advocacy. ",
+                  desc: "Siddhant Saroha is an Advocate practicing before the Hon'ble Supreme Court of India. He also appears before the Hon'ble Delhi High Court, the Hon'ble High Court of Punjab and Haryana, the National Company Law Tribunal (NCLT), the National Company Law Appellate Tribunal (NCLAT), and various other judicial and quasi-judicial forums across india. He completed his BBA (Hons.) from Jindal Global Business School in 2019, followed by his LL.B. from Jindal Global Law School, graduating in 2022. He began his legal career with Tewari & Associates as an Associate and was elevated to Partner at Raven Law LLP in January 2025. Since then, he has become an important and integral part of the firm's leadership and litigation practice. Siddhant specialises in Criminal Law, Civil Law, Service Law, Arbitration, Election Petitions, Family Law, Election Law etc... His practice spans a wide spectrum of litigation, including complex bail matters, trial-level criminal defence, high-stakes civil and commercial disputes, contractual and corporate arbitrations, sensitive matrimonial and family disputes, and service matters involving disciplinary action, suspension, and promotions. He also regularly handles election petitions. He is known for his strategic litigation approach, meticulous research, clear drafting, and strong courtroom advocacy. ",
                 },
                 {
                   name: "Sidhant Awasthy",
@@ -641,7 +643,7 @@ const Index = () => {
                   name: "Aniket Kumar Parcha",
                   img: aniket,
                   role: "Associate",
-                  desc: "Advocate Aniket Kumar Parcha is an advocate with a dynamic and evolving practice, representing clients across criminal, civil, corporate, and matrimonial matters. He regularly appears before the Hon’ble Supreme Court of India, the High Court of Delhi, various District Courts, and multiple tribunals, handling a broad spectrum of contentious and advisory work.Aniket’s professional experience encompasses drafting and arguing petitions, complaints, and applications, as well as conducting detailed legal research to support complex litigation. He has represented clients in matters and assisted Seniors under diverse statutory frameworks, including corporate and commercial disputes, matrimonial proceedings, and criminal trials.With a methodical, research-oriented, and solution-driven approach, Aniket brings precision and clarity to every case he handles. His practice reflects a balance between rigorous preparation and confident courtroom advocacy, making him an integral part of the firm’s litigation team.",
+                  desc: "Aniket Kumar Parcha is an advocate with a dynamic and evolving practice, representing clients across criminal, civil, corporate, and matrimonial matters. He regularly appears before the Hon’ble Supreme Court of India, the High Court of Delhi, various District Courts, and multiple tribunals, handling a broad spectrum of contentious and advisory work.Aniket’s professional experience encompasses drafting and arguing petitions, complaints, and applications, as well as conducting detailed legal research to support complex litigation. He has represented clients in matters and assisted Seniors under diverse statutory frameworks, including corporate and commercial disputes, matrimonial proceedings, and criminal trials.With a methodical, research-oriented, and solution-driven approach, Aniket brings precision and clarity to every case he handles. His practice reflects a balance between rigorous preparation and confident courtroom advocacy, making him an integral part of the firm’s litigation team.",
                 },
               ].map((member, idx) => (
                 <motion.div
