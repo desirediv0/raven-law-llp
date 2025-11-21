@@ -866,25 +866,25 @@ const Index = () => {
         whileInView="visible"
         viewport={{ once: true }}
         variants={containerVariants}
-        className="py-12 bg-gradient-to-br from-slate-50 to-slate-100"
+        className="py-10 bg-gradient-to-br from-slate-50 to-slate-100"
       >
-        <div className=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className=" max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Heading */}
           <h1 className="text-3xl md:text-4xl font-semibold mb-10 text-slate-800 text-center tracking-tight">
             Legal Disclaimer
           </h1>
 
           {/* Two-Column Layout */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div className="grid grid-cols-1  gap-2">
             {/* LEFT SIDE CONTENT */}
             <div>
-              <p className="text-sm md:text-base leading-relaxed mb-6 text-slate-700">
+              <p className="text-sm md:text-base leading-relaxed mb-4 text-slate-700">
                 The Bar Council of India prohibits advocates from engaging in
                 any form of advertisement or solicitation. By accessing the
                 Raven Law LLP website (our website), the user acknowledges that:
               </p>
 
-              <ul className="space-y-4 text-sm md:text-base leading-relaxed list-disc pl-6 text-slate-700">
+              <ul className="space-y-2 text-sm md:text-base leading-relaxed list-disc pl-6 text-slate-700">
                 <li>
                   The user is voluntarily using our website to gain information
                   about us for their information and use. They also acknowledge
@@ -909,38 +909,7 @@ const Index = () => {
               </ul>
             </div>
 
-            {/* RIGHT SIDE YELLOW BOX */}
-            <div className="bg-amber-50 p-6 rounded-xl border border-amber-200 shadow-md">
-              <p className="text-sm md:text-base text-amber-800 font-medium">
-                The Bar Council of India prohibits advocates from engaging in
-                any form of advertisement or solicitation. By accessing the
-                Raven Law LLP website (our website), the user acknowledges that:
-              </p>
 
-              <ul className="mt-4 space-y-3 text-xs md:text-sm text-amber-700 list-disc pl-6">
-                <li>
-                  The user is voluntarily using our website to gain information
-                  about us for their information and use. They also acknowledge
-                  that there has been no attempt by us to advertise or solicit
-                  work.
-                </li>
-                <li>
-                  Any information obtained or downloaded from our website does
-                  not lead to the creation of an attorney-client relationship
-                  between the Firm and the user.
-                </li>
-                <li>
-                  The content on this website is for informational purposes only
-                  and cannot be construed to be a form of legal opinion or legal
-                  advice.
-                </li>
-                <li>
-                  Raven Law LLP will not be held liable for any consequences
-                  from actions taken based on the materials or information
-                  provided on this website.
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </motion.section>
