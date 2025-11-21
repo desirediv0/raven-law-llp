@@ -2,20 +2,20 @@
 import { MapPin, Phone, Mail, X, Menu } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import ajayTewariImg from "@/assets/ajay-tewari.jpg";
+// import ajayTewariImg from "@/assets/ajay-tewari.jpg";
 import abhimanyuImg from "@/assets/abhimanyu-tewari.jpg";
 import amitabhImg from "@/assets/amitabh-tewari.jpg";
-import sanyaImg from "@/assets/sanya-kaushal.jpg";
-import tusharImg from "@/assets/tushar-bathija.jpg";
-import rioImg from "@/assets/rio.jpg";
-import dilmrigImg from "@/assets/dilmrig-nayani.jpg";
-import mahimaImg from "@/assets/mahima-gupta.jpg";
-import shivamImg from "@/assets/shivam-sharma.jpg";
+// import sanyaImg from "@/assets/sanya-kaushal.jpg";
+// import tusharImg from "@/assets/tushar-bathija.jpg";
+// import rioImg from "@/assets/rio.jpg";
+// import dilmrigImg from "@/assets/dilmrig-nayani.jpg";
+// import mahimaImg from "@/assets/mahima-gupta.jpg";
+// import shivamImg from "@/assets/shivam-sharma.jpg";
 import satvikImg from "@/assets/satvik-bansal.jpg";
 import siddhant from "@/assets/siddhant.png";
-import aniket from "@/assets/aniket.png"
-import dummy from "@/assets/dummy.png"
-import ishaan from "@/assets/ishaan.png"
+import aniket from "@/assets/aniket.png";
+import dummy from "@/assets/dummy.png";
+import ishaan from "@/assets/ishaan.png";
 import Image from "next/image";
 
 const containerVariants = {
@@ -52,9 +52,8 @@ const Index = () => {
       phone: ["+911724628544", "+91 7015498386"],
       lat: 30.7333,
       lng: 76.7794,
-    }
+    },
   ];
-
 
   const seminars = [
     {
@@ -66,11 +65,13 @@ const Index = () => {
       link: "https://www.youtube.com/watch?v=e_LR-dkqEGo",
     },
     {
-      title: "Racial discrimination in India: realising the spirit of Article 14 and the need for a comprehensive Civil Rights Act",
+      title:
+        "Racial discrimination in India: realising the spirit of Article 14 and the need for a comprehensive Civil Rights Act",
       link: "https://www.youtube.com/watch?v=8dRp6G4hK0I",
     },
     {
-      title: "Understanding the inherent powers of the High Courts under Section 482 of CrPC",
+      title:
+        "Understanding the inherent powers of the High Courts under Section 482 of CrPC",
       link: "https://www.youtube.com/watch?v=lIzvxqnR6lE",
     },
     {
@@ -94,7 +95,8 @@ const Index = () => {
       link: "https://www.youtube.com/watch?v=lNnoW7CrXFk&t=7s",
     },
     {
-      title: "The functioning of Courts during Covid-19: a pan-Indian perspective",
+      title:
+        "The functioning of Courts during Covid-19: a pan-Indian perspective",
       link: "https://www.youtube.com/watch?v=usUygTs0OVE&t=25s",
     },
     {
@@ -131,7 +133,14 @@ const Index = () => {
     },
   ];
 
-  const menuItems = ["Home", "About", "Office Members", "Seminars", "Articles", "Contact"];
+  const menuItems = [
+    "Home",
+    "About",
+    "Office Members",
+    "Seminars",
+    "Articles",
+    "Contact",
+  ];
 
   return (
     <main className="bg-slate-50">
@@ -228,25 +237,45 @@ const Index = () => {
               </div>
               <div className="p-6 grid md:grid-cols-2 gap-6">
                 {offices.map((office, idx) => (
-                  <div key={idx} className="border-2 border-slate-200 rounded-xl p-6 hover:border-yellow-600 transition-colors bg-gradient-to-br from-slate-50 to-white shadow-lg">
-                    <h3 className="text-lg font-bold mb-4 text-slate-800">{office.title}</h3>
+                  <div
+                    key={idx}
+                    className="border-2 border-slate-200 rounded-xl p-6 hover:border-yellow-600 transition-colors bg-gradient-to-br from-slate-50 to-white shadow-lg"
+                  >
+                    <h3 className="text-lg font-bold mb-4 text-slate-800">
+                      {office.title}
+                    </h3>
                     <div className="space-y-3 text-sm mb-4">
                       <div className="flex gap-2">
-                        <MapPin size={16} className="text-yellow-600 flex-shrink-0 mt-1" />
+                        <MapPin
+                          size={16}
+                          className="text-yellow-600 flex-shrink-0 mt-1"
+                        />
                         <p className="text-slate-600">{office.address}</p>
                       </div>
                       {office.email && (
                         <div className="flex gap-2">
-                          <Mail size={16} className="text-yellow-600 flex-shrink-0 mt-1" />
-                          <a href={`mailto:${office.email}`} className="text-yellow-600 hover:underline break-all">
+                          <Mail
+                            size={16}
+                            className="text-yellow-600 flex-shrink-0 mt-1"
+                          />
+                          <a
+                            href={`mailto:${office.email}`}
+                            className="text-yellow-600 hover:underline break-all"
+                          >
                             {office.email}
                           </a>
                         </div>
                       )}
                       {office.phone.map((p, i) => (
                         <div key={i} className="flex gap-2">
-                          <Phone size={16} className="text-yellow-600 flex-shrink-0 mt-1" />
-                          <a href={`tel:${p}`} className="text-yellow-600 hover:underline">
+                          <Phone
+                            size={16}
+                            className="text-yellow-600 flex-shrink-0 mt-1"
+                          />
+                          <a
+                            href={`tel:${p}`}
+                            className="text-yellow-600 hover:underline"
+                          >
                             {p}
                           </a>
                         </div>
@@ -287,21 +316,31 @@ const Index = () => {
             >
               <div className="sticky top-0 bg-yellow-600 text-white p-4 flex justify-between items-center rounded-t-2xl">
                 <h3 className="text-lg font-semibold">Call an Office</h3>
-                <button onClick={() => setCallOpen(false)} className="p-2 rounded-full bg-yellow-700/20 hover:bg-yellow-700/30">
+                <button
+                  onClick={() => setCallOpen(false)}
+                  className="p-2 rounded-full bg-yellow-700/20 hover:bg-yellow-700/30"
+                >
                   <X size={20} className="text-white" />
                 </button>
               </div>
 
               <div className="p-4 space-y-4">
                 {offices.map((office, idx) => (
-                  <div key={idx} className="border border-slate-200 rounded-lg p-3">
+                  <div
+                    key={idx}
+                    className="border border-slate-200 rounded-lg p-3"
+                  >
                     <div className="flex items-center justify-between">
-                      <h4 className="text-sm font-bold text-slate-800">{office.title}</h4>
-                      <span className="text-xs text-slate-500">Tap to call</span>
+                      <h4 className="text-sm font-bold text-slate-800">
+                        {office.title}
+                      </h4>
+                      <span className="text-xs text-slate-500">
+                        Tap to call
+                      </span>
                     </div>
                     <div className="mt-3 space-y-2">
                       {office.phone.map((p, i) => {
-                        const cleaned = String(p || '').replace(/\s+/g, '');
+                        const cleaned = String(p || "").replace(/\s+/g, "");
                         return (
                           <a
                             key={i}
@@ -310,7 +349,9 @@ const Index = () => {
                             onClick={() => setCallOpen(false)}
                           >
                             <Phone size={16} />
-                            <span className="text-sm">{String(p || '').trim()}</span>
+                            <span className="text-sm">
+                              {String(p || "").trim()}
+                            </span>
                           </a>
                         );
                       })}
@@ -332,9 +373,9 @@ const Index = () => {
         className="relative flex flex-col items-center justify-center text-white text-center min-h-screen overflow-hidden"
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(/bg.avif)`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       >
         {/* Overlay Pattern */}
@@ -343,7 +384,7 @@ const Index = () => {
             className="absolute inset-0"
             style={{
               backgroundImage:
-                'repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.05) 35px, rgba(255,255,255,.05) 70px)',
+                "repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.05) 35px, rgba(255,255,255,.05) 70px)",
             }}
           ></div>
         </div>
@@ -356,7 +397,7 @@ const Index = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight"
           >
-            <span className="text-white">RAVEN LAW</span>{' '}
+            <span className="text-white">RAVEN LAW</span>{" "}
             <span className="text-yellow-600">LLP</span>
           </motion.h1>
 
@@ -406,8 +447,11 @@ const Index = () => {
                     Punjab and Haryana High Court
                   </p> */}
                   <p className="text-white/90 max-w-3xl text-sm md:text-base leading-relaxed text-justify">
-                    Raven Law LLP is a fourth-generation law firm with offices in New Delhi and Chandigarh. The firm continues its long-standing tradition of legal excellence
-                    and ethical practice, offering a wide range of litigation and advisory services.
+                    Raven Law LLP is a law firm headed by fourth-generation
+                    lawyers with offices in New Delhi and Chandigarh. The firm
+                    continues its long-standing tradition of legal excellence
+                    and ethical practice, offering a wide range of litigation
+                    and advisory services.
                   </p>
                 </div>
               </motion.div>
@@ -420,15 +464,15 @@ const Index = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                   {[
                     {
-                      name: 'ABHIMANYU TEWARI',
-                      role: 'Advocate-On-Record Supreme Court of India',
-                      office: 'Managed out of New Delhi',
+                      name: "ABHIMANYU TEWARI",
+                      role: "Advocate-On-Record Supreme Court of India",
+                      office: "Managed out of New Delhi",
                       img: abhimanyuImg,
                     },
                     {
-                      name: 'AMITABH TEWARI',
-                      role: 'Advocate, BLS LL.B, BCL (Oxford University)',
-                      office: 'Managed out of Chandigarh',
+                      name: "AMITABH TEWARI",
+                      role: "Advocate, BLS LL.B, BCL (Oxford University)",
+                      office: "Managed out of Chandigarh",
                       img: amitabhImg,
                     },
                   ].map((member, idx) => (
@@ -439,7 +483,6 @@ const Index = () => {
                       className="bg-white p-6 rounded-xl border-2 border-slate-200 hover:border-yellow-600 hover:shadow-2xl transition-all"
                     >
                       <Image
-
                         src={member.img}
                         alt={member.name}
                         width={96}
@@ -483,7 +526,17 @@ const Index = () => {
 
           <motion.div variants={itemVariants} className="space-y-6 text-center">
             <p className="text-base md:text-lg text-slate-700 leading-relaxed text-justify">
-              RAVEN LAW LLP is a law firm led by Abhimanyu Tewari and Amitabh Tewari, specialising in litigation and dispute resolution with offices in Chandigarh and New Delhi. The firm offers a range of all kind of services pertaining to litigation and dispute resolution across fora including Supreme Court, High Courts, Tribunals etc. The firm has a legacy of more than 80 years in providing quality legal services in practice areas involving civil, criminal, corporate and commercial, real estate, sports, entertainment, real estate and arbitration law. The partners are assisted by a team of 10 lawyers and other support staff across Delhi and Chandigarh.
+              RAVEN LAW LLP is a law firm led by Abhimanyu Tewari and Amitabh
+              Tewari, specialising in litigation and dispute resolution with
+              offices in Chandigarh and New Delhi. The firm offers a range of
+              all kind of services pertaining to litigation and dispute
+              resolution across fora including Supreme Court, High Courts,
+              Tribunals etc. The firm is built on a legacy of more than 80 years
+              and provides quality legal services in practice areas involving
+              civil, criminal, corporate and commercial, real estate, sports,
+              entertainment, real estate and arbitration law. The partners are
+              assisted by a team of 10 lawyers and other support staff across
+              Delhi and Chandigarh.
             </p>
           </motion.div>
         </div>
@@ -508,7 +561,9 @@ const Index = () => {
 
           {/* Delhi Office */}
           <motion.div variants={itemVariants} className="mb-8">
-            <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-8 pb-3 border-b-2 border-yellow-600">NEW DELHI OFFICE</h3>
+            <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-8 pb-3 border-b-2 border-yellow-600">
+              NEW DELHI OFFICE
+            </h3>
 
             <div className="grid  gap-6 mb-8">
               <motion.div
@@ -517,18 +572,33 @@ const Index = () => {
                 className="bg-gradient-to-br from-slate-50 to-white p-6 rounded-xl border-2 border-slate-200 hover:border-yellow-600 shadow-lg hover:shadow-2xl transition-all"
               >
                 <Image
-
                   src={abhimanyuImg}
                   alt="Abhimanyu Tewari"
                   className="w-32 h-32 rounded-full mb-4 mx-auto object-cover border-4 border-yellow-600/20"
                   width={144}
                   height={144}
                 />
-                <h4 className="text-xl font-bold text-slate-800 mb-1 text-center">ABHIMANYU TEWARI</h4>
-                <p className="text-gray-600 md:font-semibold text-sm text-center">Partner</p>
-                <p className="text-yellow-600 md:font-semibold text-sm mb-4 text-center">Advocate-On-Record Supreme Court of India</p>
+                <h4 className="text-xl font-bold text-slate-800 mb-1 text-center">
+                  ABHIMANYU TEWARI
+                </h4>
+                <p className="text-gray-600 md:font-semibold text-sm text-center">
+                  Partner
+                </p>
+                <p className="text-yellow-600 md:font-semibold text-sm mb-4 text-center">
+                  Advocate-On-Record Supreme Court of India
+                </p>
                 <p className="text-slate-700 leading-relaxed text-sm text-justify">
-                  The Delhi Office is led by Abhimanyu Tewari who is an Advocate on Record at the Supreme Court of India. Mr. Abhimanyu Tewari graduated from St. Stephens, Delhi in 2008 after completing his Bachelor of Arts. Thereafter, he went on to pursue his law from Punjab University, Chandigarh before starting his practice in the Supreme Court of India in 2012. Mr. Abhimanyu Tewari has extensive experience in handling matters pertaining to civil, criminal, corporate and commercial, real estate, sports, entertainment, real estate, arbitration law in the Supreme Court of India, Punjab and Haryana High Court at Chandigarh, National Company Law Tribunal etc.
+                  The Delhi Office is led by Abhimanyu Tewari who is an Advocate
+                  on Record at the Supreme Court of India. Mr. Abhimanyu Tewari
+                  graduated from St. Stephens, Delhi in 2008 after completing
+                  his Bachelor of Arts. Thereafter, he went on to pursue his law
+                  from Punjab University, Chandigarh before starting his
+                  practice in the Supreme Court of India in 2012. Mr. Abhimanyu
+                  Tewari has extensive experience in handling matters pertaining
+                  to civil, criminal, corporate and commercial, real estate,
+                  sports, entertainment, real estate, arbitration law in the
+                  Supreme Court of India, Punjab and Haryana High Court at
+                  Chandigarh, National Company Law Tribunal etc.
                 </p>
               </motion.div>
 
@@ -559,7 +629,7 @@ const Index = () => {
                   name: "Siddhant Saroha",
                   img: siddhant,
                   role: "Partner",
-                  desc: "Siddhant Saroha is an Advocate practicing before the Hon’ble Supreme Court of India, the Hon’ble Delhi High Court, the Hon’ble High Court of Punjab and Haryana, the National Company Law Tribunal (NCLT), the National Company Law Appellate Tribunal (NCLAT), and various other judicial and quasi-judicial forums across India. He completed his BBA (Hons.) from Jindal Global Business School in 2019, followed by his LL.B. from Jindal Global Law School, graduating in 2022. He began his legal career with Tewari & Associates as an Associate and was elevated to Partner at Raven Law LLP in January 2025. Since then, he has become an important and integral part of the firm’s leadership and litigation practice.Siddhant specialises in Criminal Law, Civil Law, Service Law, Arbitration, Election Petitions, Family Law, Election Law etc.. His practice spans a wide spectrum of litigation, including complex bail matters, trial-level criminal defence, high-stakes civil and commercial disputes, contractual and corporate arbitrations, sensitive matrimonial and family disputes, and service matters involving disciplinary action, suspension, and promotions. He also regularly handles election petitions. He is known for his strategic litigation approach, meticulous research, clear drafting, and strong courtroom advocacy. ",
+                  desc: "Siddhant Saroha is an Advocate practicing before the Hon'ble Supreme Court of India. He also appears before the Hon'ble Delhi High Court. He completed his BBA (Hons.) from Jindal Global Business School in 2019, followed by his LL.B. from Jindal Global Law School, graduating in 2022. He began his legal career with Tewari & Associates as an Associate and was elevated to Partner at Raven Law LLP in January 2025. Since then, he has become an important and integral part of the firm's leadership and litigation practice.Siddhant specialises in Criminal Law, Civil Law, Service Law, Arbitration, Election Petitions, Family Law, Election Law etc.. His practice spans a wide spectrum of litigation, including complex bail matters, trial-level criminal defence, high-stakes civil and commercial disputes, contractual and corporate arbitrations, sensitive matrimonial and family disputes, and service matters involving disciplinary action, suspension, and promotions. He also regularly handles election petitions. He is known for his strategic litigation approach, meticulous research, clear drafting, and strong courtroom advocacy. ",
                 },
                 {
                   name: "Sidhant Awasthy",
@@ -571,7 +641,7 @@ const Index = () => {
                   name: "Aniket Kumar Parcha",
                   img: aniket,
                   role: "Associate",
-                  desc: "AAdvocate Aniket Kumar Parcha is an advocate with a dynamic and evolving practice, representing clients across criminal, civil, corporate, and matrimonial matters. He regularly appears before the Hon’ble Supreme Court of India, the High Court of Delhi, various District Courts, and multiple tribunals, handling a broad spectrum of contentious and advisory work.Aniket’s professional experience encompasses drafting and arguing petitions, complaints, and applications, as well as conducting detailed legal research to support complex litigation. He has represented clients in matters and assisted Seniors under diverse statutory frameworks, including corporate and commercial disputes, matrimonial proceedings, and criminal trials.With a methodical, research-oriented, and solution-driven approach, Aniket brings precision and clarity to every case he handles. His practice reflects a balance between rigorous preparation and confident courtroom advocacy, making him an integral part of the firm’s litigation team.",
+                  desc: "Advocate Aniket Kumar Parcha is an advocate with a dynamic and evolving practice, representing clients across criminal, civil, corporate, and matrimonial matters. He regularly appears before the Hon’ble Supreme Court of India, the High Court of Delhi, various District Courts, and multiple tribunals, handling a broad spectrum of contentious and advisory work.Aniket’s professional experience encompasses drafting and arguing petitions, complaints, and applications, as well as conducting detailed legal research to support complex litigation. He has represented clients in matters and assisted Seniors under diverse statutory frameworks, including corporate and commercial disputes, matrimonial proceedings, and criminal trials.With a methodical, research-oriented, and solution-driven approach, Aniket brings precision and clarity to every case he handles. His practice reflects a balance between rigorous preparation and confident courtroom advocacy, making him an integral part of the firm’s litigation team.",
                 },
               ].map((member, idx) => (
                 <motion.div
@@ -587,9 +657,15 @@ const Index = () => {
                     width={96}
                     height={96}
                   />
-                  <h4 className="text-lg font-bold text-slate-800 mb-1 text-center">{member.name}</h4>
-                  <p className="text-yellow-600 md:font-semibold text-sm mb-3 text-center">{member.role}</p>
-                  <p className="text-slate-600 text-sm leading-relaxed text-justify">{member.desc}</p>
+                  <h4 className="text-lg font-bold text-slate-800 mb-1 text-center">
+                    {member.name}
+                  </h4>
+                  <p className="text-yellow-600 md:font-semibold text-sm mb-3 text-center">
+                    {member.role}
+                  </p>
+                  <p className="text-slate-600 text-sm leading-relaxed text-justify">
+                    {member.desc}
+                  </p>
                 </motion.div>
               ))}
             </div>
@@ -597,7 +673,9 @@ const Index = () => {
 
           {/* Chandigarh Office */}
           <motion.div variants={itemVariants} className="mt-16">
-            <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-8 pb-3 border-b-2 border-yellow-600">CHANDIGARH OFFICE</h3>
+            <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-8 pb-3 border-b-2 border-yellow-600">
+              CHANDIGARH OFFICE
+            </h3>
 
             {/* <div className="mb-6">
               <motion.div
@@ -639,7 +717,7 @@ const Index = () => {
                   name: "Ishaan Mundeja",
                   role: "Associate",
                   img: ishaan,
-                  desc: "Adv. Ishaan Mundeja is an Associate with the firm’s litigation team, engaged in matters across Punjab, Haryana, and Chandigarh. A graduate of Symbiosis Law School, Pune, he has developed extensive experience before the Hon’ble Punjab and Haryana High Court and various subordinate and quasi-judicial forums. His work encompasses criminal, commercial, and regulatory disputes, with a focus on drafting, legal research, and strategic case assistance.Ishaan is also actively involved in pro bono initiatives, with a particular commitment to advancing causes of civic welfare and accessibility rights.Drawing from varied professional and personal experiences, Ishaan approaches legal issues with empathy and practical insight. Outside the profession, he is deeply passionate about music and songwriting — a creative pursuit that complements his analytical thinking and reinforces his belief in balance, expression, and integrity, both in life and in law.",
+                  desc: "Ishaan Mundeja is an Associate with the firm’s litigation team, engaged in matters across Punjab, Haryana, and Chandigarh. A graduate of Symbiosis Law School, Pune, he has developed extensive experience before the Hon’ble Punjab and Haryana High Court and various subordinate and quasi-judicial forums. His work encompasses criminal, commercial, and regulatory disputes, with a focus on drafting, legal research, and strategic case assistance.Ishaan is also actively involved in pro bono initiatives, with a particular commitment to advancing causes of civic welfare and accessibility rights.Drawing from varied professional and personal experiences, Ishaan approaches legal issues with empathy and practical insight. Outside the profession, he is deeply passionate about music and songwriting — a creative pursuit that complements his analytical thinking and reinforces his belief in balance, expression, and integrity, both in life and in law.",
                 },
               ].map((member, idx) => (
                 <motion.div
@@ -655,9 +733,15 @@ const Index = () => {
                     width={96}
                     height={96}
                   />
-                  <h4 className="text-lg font-bold text-slate-800 mb-1 text-center">{member.name}</h4>
-                  <p className="text-yellow-600 md:font-semibold text-sm mb-3 text-center">{member.role}</p>
-                  <p className="text-slate-600 text-sm leading-relaxed text-justify">{member.desc}</p>
+                  <h4 className="text-lg font-bold text-slate-800 mb-1 text-center">
+                    {member.name}
+                  </h4>
+                  <p className="text-yellow-600 md:font-semibold text-sm mb-3 text-center">
+                    {member.role}
+                  </p>
+                  <p className="text-slate-600 text-sm leading-relaxed text-justify">
+                    {member.desc}
+                  </p>
                 </motion.div>
               ))}
             </div>
@@ -776,7 +860,6 @@ const Index = () => {
         </div>
       </motion.section>
 
-
       <motion.section
         id="disclaimer"
         initial="hidden"
@@ -793,42 +876,74 @@ const Index = () => {
 
           {/* Two-Column Layout */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-
             {/* LEFT SIDE CONTENT */}
             <div>
               <p className="text-sm md:text-base leading-relaxed mb-6 text-slate-700">
-                The Bar Council of India prohibits advocates from engaging in any form of advertisement or solicitation.
-                By accessing the Raven Law LLP website (our website), the user acknowledges that:
+                The Bar Council of India prohibits advocates from engaging in
+                any form of advertisement or solicitation. By accessing the
+                Raven Law LLP website (our website), the user acknowledges that:
               </p>
 
               <ul className="space-y-4 text-sm md:text-base leading-relaxed list-disc pl-6 text-slate-700">
-                <li>The user is voluntarily using our website to gain information about us for their information and use. They also acknowledge that there has been no attempt by us to advertise or solicit work.</li>
-                <li>Any information obtained or downloaded from our website does not lead to the creation of an attorney-client relationship between the Firm and the user.</li>
-                <li>The content on this website is for informational purposes only and cannot be construed to be a form of legal opinion or legal advice.</li>
-                <li>Raven Law LLP will not be held liable for any consequences from actions taken based on the materials or information provided on this website.</li>
+                <li>
+                  The user is voluntarily using our website to gain information
+                  about us for their information and use. They also acknowledge
+                  that there has been no attempt by us to advertise or solicit
+                  work.
+                </li>
+                <li>
+                  Any information obtained or downloaded from our website does
+                  not lead to the creation of an attorney-client relationship
+                  between the Firm and the user.
+                </li>
+                <li>
+                  The content on this website is for informational purposes only
+                  and cannot be construed to be a form of legal opinion or legal
+                  advice.
+                </li>
+                <li>
+                  Raven Law LLP will not be held liable for any consequences
+                  from actions taken based on the materials or information
+                  provided on this website.
+                </li>
               </ul>
             </div>
 
             {/* RIGHT SIDE YELLOW BOX */}
             <div className="bg-amber-50 p-6 rounded-xl border border-amber-200 shadow-md">
               <p className="text-sm md:text-base text-amber-800 font-medium">
-                The Bar Council of India prohibits advocates from engaging in any form of advertisement or solicitation.
-                By accessing the Raven Law LLP website (our website), the user acknowledges that:
+                The Bar Council of India prohibits advocates from engaging in
+                any form of advertisement or solicitation. By accessing the
+                Raven Law LLP website (our website), the user acknowledges that:
               </p>
 
               <ul className="mt-4 space-y-3 text-xs md:text-sm text-amber-700 list-disc pl-6">
-                <li>The user is voluntarily using our website to gain information about us for their information and use. They also acknowledge that there has been no attempt by us to advertise or solicit work.</li>
-                <li>Any information obtained or downloaded from our website does not lead to the creation of an attorney-client relationship between the Firm and the user.</li>
-                <li>The content on this website is for informational purposes only and cannot be construed to be a form of legal opinion or legal advice.</li>
-                <li>Raven Law LLP will not be held liable for any consequences from actions taken based on the materials or information provided on this website.</li>
+                <li>
+                  The user is voluntarily using our website to gain information
+                  about us for their information and use. They also acknowledge
+                  that there has been no attempt by us to advertise or solicit
+                  work.
+                </li>
+                <li>
+                  Any information obtained or downloaded from our website does
+                  not lead to the creation of an attorney-client relationship
+                  between the Firm and the user.
+                </li>
+                <li>
+                  The content on this website is for informational purposes only
+                  and cannot be construed to be a form of legal opinion or legal
+                  advice.
+                </li>
+                <li>
+                  Raven Law LLP will not be held liable for any consequences
+                  from actions taken based on the materials or information
+                  provided on this website.
+                </li>
               </ul>
             </div>
-
           </div>
         </div>
       </motion.section>
-
-
 
       {/* Contact Section */}
       <motion.section
@@ -847,7 +962,10 @@ const Index = () => {
             <div className="h-1 w-20 bg-yellow-600 mx-auto rounded-full"></div>
           </motion.div>
 
-          <motion.div variants={containerVariants} className="grid md:grid-cols-2 gap-6">
+          <motion.div
+            variants={containerVariants}
+            className="grid md:grid-cols-2 gap-6"
+          >
             {offices.map((office, idx) => (
               <motion.div
                 key={idx}
@@ -855,24 +973,41 @@ const Index = () => {
                 whileHover={{ y: -5 }}
                 className="bg-white/10 backdrop-blur border-2 border-white/30 rounded-xl p-6 hover:bg-white/20 hover:border-yellow-600 transition-all shadow-lg"
               >
-                <h3 className="text-xl font-bold mb-4 text-white">{office.title}</h3>
+                <h3 className="text-xl font-bold mb-4 text-white">
+                  {office.title}
+                </h3>
                 <div className="space-y-3 text-sm">
                   <div className="flex gap-2">
-                    <MapPin size={16} className="text-yellow-600 flex-shrink-0 mt-1" />
+                    <MapPin
+                      size={16}
+                      className="text-yellow-600 flex-shrink-0 mt-1"
+                    />
                     <p className="text-white/90">{office.address}</p>
                   </div>
                   {office.email && (
                     <div className="flex gap-2">
-                      <Mail size={16} className="text-yellow-600 flex-shrink-0 mt-1" />
-                      <a href={`mailto:${office.email}`} className="text-yellow-600 hover:underline break-all">
+                      <Mail
+                        size={16}
+                        className="text-yellow-600 flex-shrink-0 mt-1"
+                      />
+                      <a
+                        href={`mailto:${office.email}`}
+                        className="text-yellow-600 hover:underline break-all"
+                      >
                         {office.email}
                       </a>
                     </div>
                   )}
                   {office.phone.map((p, i) => (
                     <div key={i} className="flex gap-2">
-                      <Phone size={16} className="text-yellow-600 flex-shrink-0 mt-1" />
-                      <a href={`tel:${p}`} className="text-yellow-600 hover:underline">
+                      <Phone
+                        size={16}
+                        className="text-yellow-600 flex-shrink-0 mt-1"
+                      />
+                      <a
+                        href={`tel:${p}`}
+                        className="text-yellow-600 hover:underline"
+                      >
                         {p}
                       </a>
                     </div>
@@ -891,7 +1026,9 @@ const Index = () => {
           </motion.div>
 
           <motion.div variants={itemVariants} className="text-center mt-12">
-            <p className="text-white/60 text-sm">© 2025 by Raven Law LLP All rights reserved.</p>
+            <p className="text-white/60 text-sm">
+              © 2025 by Raven Law LLP All rights reserved.
+            </p>
           </motion.div>
         </div>
       </motion.section>
@@ -909,7 +1046,9 @@ const Index = () => {
           title="Find us on map"
           aria-label="Open map locations"
           className="bg-gradient-to-r from-yellow-600 to-yellow-700 text-white w-16 h-16 rounded-full shadow-2xl hover:shadow-yellow-600/50 transition-all flex items-center justify-center font-bold"
-          style={{ animation: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite' }}
+          style={{
+            animation: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+          }}
         >
           <MapPin size={24} className="hover:rotate-12 transition-transform" />
         </motion.button>
